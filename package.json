@@ -1,0 +1,15 @@
+{
+  "name": "scriptjson",
+  "version": "1.0.0",
+  "description": "Script para convertir de xls a json ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test dev ",
+    "start": "node index.js"
+  },
+  "author": "Jesse Ilescas",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
