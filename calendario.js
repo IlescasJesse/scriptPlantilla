@@ -51,9 +51,9 @@ async function insertarDatos(client, databaseName, collectionName) {
     );
     const esFinDeSemana = ["SÁBADO", "DOMINGO"].includes(diaDeLaSemana);
     const quincena = Math.floor(i / 15) + 1;
-    const festividad = yop;
-    diasInhabiles.find((d) => d.fecha === fecha.format("DD-MM-YYYY"))
-      ?.festividad || (esFinDeSemana ? diaDeLaSemana : null);
+    const festividad =
+      diasInhabiles.find((d) => d.fecha === fecha.format("DD-MM-YYYY"))
+        ?.festividad || (esFinDeSemana ? diaDeLaSemana : null);
     const dia = {
       FECHA: fecha.format("DD-MM-YYYY"),
       DIA: diaDeLaSemana,
