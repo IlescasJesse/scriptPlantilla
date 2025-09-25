@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // Configuración de la conexión a MongoDB
 const uri = "mongodb://localhost:27017"; // Cambia esto según tu configuración
-const dbName = "sirhTest"; // Cambia esto por el nombre de tu base de datos
+const dbName = "sirhTest";
 const collectionName = "PLANTILLA";
 const collectionLicencias = "LICENCIAS"; // Cambia esto por el nombre de tu colección
 
@@ -42,7 +42,7 @@ async function procesarPlantillatipoNOM() {
     const registrosLicencias = registros.filter(
       (registro) => registro.TIPONOM === "LS"
     );
-
+    registrosLicencias.forEach((licencia) => (licencia.status = 1));
     if (registrosLicencias.length > 0) {
       const collectionLic = db.collection(collectionLicencias);
       await collectionLic.insertMany(registrosLicencias);

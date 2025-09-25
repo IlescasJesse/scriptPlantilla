@@ -73,10 +73,7 @@ async function insertarDatos(client, databaseName, collectionName) {
 }
 
 async function main() {
-  const client = new MongoClient(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  const client = new MongoClient(uri, {});
 
   try {
     await client.connect();

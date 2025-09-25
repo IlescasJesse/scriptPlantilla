@@ -8,6 +8,7 @@ const {
   actualizarTiponomEnPlazas,
 } = require("./tiponomina");
 const { setProyect } = require("./setProyect");
+const { exec } = require("child_process");
 // const uri = "mongodb://mongoadmin:pb9*V82nY3An@172.17.90.58:3001";
 const uri = "mongodb://admin:1234@localhost:27017/";
 const client = new MongoClient(uri);
@@ -27,7 +28,12 @@ async function run() {
       "PLANTILLA",
       "PLAZAS",
       "LICENCIAS",
+      "INCIDENCIAS",
       "INASISTENCIAS",
+      "HSY_LICENCIAS",
+      "HSY_RECATEGORIZACIONES",
+      "HSY_PROYECTOS",
+      "HSY_STATUS_EMPLEADO",
     ];
 
     console.log("Deleting specified collections...");
@@ -92,6 +98,7 @@ async function run() {
               .replace(/\.$/, "")
               .toUpperCase(),
             numTarjeta: numTarjeta,
+            horario: row.getCell(5).value,
           });
         }
       });
@@ -105,6 +112,7 @@ async function run() {
           tarjetasData.push({
             nombre: nombre.trim().toUpperCase(),
             numTarjeta: numTarjeta,
+            horario: row.getCell(5).value,
           });
         }
       });
@@ -156,7 +164,10 @@ async function run() {
       delete jsonObject["PROFESION"];
       delete jsonObject["PROFESION2"];
 
-      if (jsonObject["NOMBRE"]) {
+      if (
+        jsonObject["NOMBRE"] !== "V A C A N T E DE:" &&
+        jsonObject["NOMBRE"] !== null
+      ) {
         const nombreParts = jsonObject["NOMBRE"].split(" ");
         jsonObject["APE_PAT"] = nombreParts[0] || null;
         jsonObject["APE_MAT"] = nombreParts[1] || null;
@@ -217,9 +228,9 @@ async function run() {
         previousOcuppants: [
           {
             NOMBRE: licencia1,
-            FECHA: licencia2,
+            FECHA: null,
             FECHA_BAJA: null,
-            MOTIVO_BAJA: null,
+            MOTIVO_BAJA: licencia2,
           },
         ],
         NUMPLA: numpla,
@@ -315,13 +326,6 @@ async function run() {
     if (eximas.length > 0) {
       await collectionEximas.insertMany(eximas);
     }
-    const permisosEconomicosData = [
-      {
-        CUATRIMESTRE_1: {},
-        CUATRIMESTRE_2: {},
-        CUATRIMESTRE_3: {},
-      },
-    ];
 
     console.log("Writing JSON files...");
     fs.writeFileSync("plazas.json", JSON.stringify(licenciaArray, null, 2));
@@ -382,10 +386,9 @@ async function run() {
 
     console.log("Updating PLANTILLA.json...");
     console.log("Documents inserted into MongoDB successfully");
-    setProyect();
+    // setProyect();
     actualizarPlantillaDesdeMongo();
     procesarPlantillatipoNOM();
-
     actualizarTiponomEnPlazas();
   } catch (err) {
     console.error("Error:", err);

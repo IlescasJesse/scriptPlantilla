@@ -107,9 +107,9 @@ const actualizarPlantillaDesdeMongo = async () => {
           (empleado) => empleado._id === operacion.updateOne.filter._id
         );
         if (nombreCompleto) {
-          // console.log(
-          //   `Registro actualizado: ${nombreCompleto.APE_PAT} ${nombreCompleto.APE_MAT} ${nombreCompleto.NOMBRES} - STATUS: ${statusEmpleado.STATUS}`
-          // );
+          console.log(
+            `Registro actualizado: ${nombreCompleto.APE_PAT} ${nombreCompleto.APE_MAT} ${nombreCompleto.NOMBRES} - STATUS: ${statusEmpleado.STATUS}`
+          );
         }
       }
     });
