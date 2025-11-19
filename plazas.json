@@ -28918,19 +28918,5 @@
     "TIPONOM": "CC",
     "PROYECTO": "1140101150600000100",
     "status": 2
-  },
-  {
-    "previousOcuppants": [
-      {
-        "NOMBRE": "  ",
-        "FECHA": null,
-        "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
-      }
-    ],
-    "NUMPLA": " ",
-    "TIPONOM": " ",
-    "PROYECTO": " ",
-    "status": 2
   }
 ]

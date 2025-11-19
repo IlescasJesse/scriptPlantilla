@@ -37,7 +37,7 @@ async function run() {
       "USERS_ACTIONS",
       "USER_ACTIONS",
     ];
-    
+
     console.log("Deleting specified collections...");
     for (const collectionName of collectionsToDelete) {
       const collection = database.collection(collectionName);
@@ -352,14 +352,38 @@ async function run() {
     const collectionIncapacidades = database.collection("INCAPACIDADES");
     const collectionEximas = database.collection("EXIMAS");
     // Crear colección VACACIONES_BASE con 6 documentos
-    const collectionVacacionesBase = database.collection("VACACIONES_BASE");
+    const collectionVacacionesBase = database.collection(
+      "PER_VACACIONALES_BASE"
+    );
+    const collectionVacacionesContrato = database.collection(
+      "PER_VACACIONALES_CONTRATO"
+    );
+
+    // Crear colección PER_VACACIONALES_BASE con 6 documentos
+    // Duplicate declaration removed. The previous vacacionesBaseDocs and insertMany already exist above.
+
+    // Crear colección PER_VACACIONALES_CONTRATO con 8 documentos
+    const vacacionesContratoDocs = [];
+    for (let periodo = 0; periodo <= 7; periodo++) {
+      vacacionesContratoDocs.push({
+        PERIODO: periodo,
+        11: { FECHA_INI: null, FECHA_FIN: null },
+        13: { FECHA_INI: null, FECHA_FIN: null },
+        15: { FECHA_INI: null, FECHA_FIN: null },
+        17: { FECHA_INI: null, FECHA_FIN: null },
+        19: { FECHA_INI: null, FECHA_FIN: null },
+      });
+    }
+    await collectionVacacionesContrato.insertMany(vacacionesContratoDocs);
     const vacacionesBaseDocs = [];
     for (let periodo = 0; periodo <= 5; periodo++) {
       vacacionesBaseDocs.push({
-      PERIODO: periodo,
-      FECHA_INI: null,
-      FECHA_FIN: null,
-      DIAS: null,
+        PERIODO: periodo,
+        11: { FECHA_INI: null, FECHA_FIN: null },
+        13: { FECHA_INI: null, FECHA_FIN: null },
+        15: { FECHA_INI: null, FECHA_FIN: null },
+        17: { FECHA_INI: null, FECHA_FIN: null },
+        19: { FECHA_INI: null, FECHA_FIN: null },
       });
     }
     await collectionVacacionesBase.insertMany(vacacionesBaseDocs);
