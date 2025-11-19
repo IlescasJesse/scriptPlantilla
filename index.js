@@ -34,8 +34,10 @@ async function run() {
       "HSY_RECATEGORIZACIONES",
       "HSY_PROYECTOS",
       "HSY_STATUS_EMPLEADO",
+      "USERS_ACTIONS",
+      "USER_ACTIONS",
     ];
-
+    
     console.log("Deleting specified collections...");
     for (const collectionName of collectionsToDelete) {
       const collection = database.collection(collectionName);
@@ -65,6 +67,10 @@ async function run() {
 
     // LEEMOS COMISIONADOS
     console.log("Reading COMISIONADOS_SINDICALES.xlsx...");
+    const workbookVacaciones = new Excel.Workbook();
+    await workbookVacaciones.xlsx.readFile("VACACIONES.xlsx");
+    const worksheetVacaciones = workbookVacaciones.getWorksheet("vacaciones");
+
     const workbookComisionados = new Excel.Workbook();
     await workbookComisionados.xlsx.readFile("COMISIONADOS_SINDICALES.xlsx");
     const worksheetComisionados =
@@ -77,7 +83,6 @@ async function run() {
     // LEEMOS TARJETAS
     console.log("Reading TARJETAS.xlsx...");
     const workbookTarjetas = new Excel.Workbook();
-    const worksheetTarjetas = workbookTarjetas.getWorksheet("AUD");
     await workbookTarjetas.xlsx.readFile("TARJETAS.xlsx");
 
     const tarjetasData = [];
@@ -243,6 +248,38 @@ async function run() {
 
       licenciaObject["PROYECTO"] = proyecto;
       licenciaObject["DEPARTAMENTO"] = departamento;
+      jsonObject["ID_CTRL_ASSIST"] = new ObjectId();
+      jsonObject["ID_CTRL_TALON"] = new ObjectId();
+      jsonObject["ID_CTRL_NOM"] = new ObjectId();
+      jsonObject["ID_CTRL_CAP"] = new ObjectId();
+      // Buscar coincidencia en worksheetVacaciones por NUMPLA
+      let vacacionesMatch = null;
+      worksheetVacaciones.eachRow(
+        { includeEmpty: true },
+        (vacRow, vacRowNumber) => {
+          if (vacRowNumber === 1) return; // Saltar encabezados
+          const NUE = parseInt(vacRow.getCell(3).value, 10); // Ajusta el índice si es diferente
+          if (NUE === jsonObject["NUMEMP"]) {
+            let fechaVac = vacRow.getCell(4).value || null;
+            if (
+              fechaVac &&
+              typeof fechaVac === "string" &&
+              fechaVac.includes("/")
+            ) {
+              const [day, month, year] = fechaVac.split("/");
+              fechaVac = `${year}/${month}/${day}`;
+            }
+            vacacionesMatch = {
+              PERIODO: 0, // Ajusta el índice si es diferente
+              FECHA_VACACIONES: fechaVac,
+            };
+          }
+        }
+      );
+      jsonObject["VACACIONES"] = vacacionesMatch || {
+        PERIODO: 0,
+        FECHA_VACACIONES: null,
+      };
 
       if (
         (jsonObject["NOMBRES"] && jsonObject["NOMBRES"].includes("VACANTE")) ||
@@ -262,14 +299,15 @@ async function run() {
           "1140041480100000223",
           "1140041480100000227",
           "1140041480100000226",
-          "1140041480100000230",
-          "1140041480100000231",
-          "1140041480100000232",
-          "1140041480100000233",
-          "1140041480100000234",
         ].includes(jsonObject["PROYECTO"])
       ) {
         jsonObject["AREA_RESP"] = "AUD";
+      } else if (
+        ["1140051490100000500", "1140051490100000508"].includes(
+          jsonObject["PROYECTO"]
+        )
+      ) {
+        jsonObject["AREA_RESP"] = "PLAN";
       } else {
         jsonObject["AREA_RESP"] = "CTRAL";
       }
@@ -299,6 +337,7 @@ async function run() {
         tramites: [],
         capacitaciones: [],
         id_plantilla: id,
+        vacaciones: [],
       })
     );
     const resultBitacora = await collectionBitacora.insertMany(bitacoraArray);
@@ -311,9 +350,19 @@ async function run() {
       "PERMISOS_ECONOMICOS"
     );
     const collectionIncapacidades = database.collection("INCAPACIDADES");
-    const collectionVacaciones = database.collection("VACACIONES");
     const collectionEximas = database.collection("EXIMAS");
-
+    // Crear colección VACACIONES_BASE con 6 documentos
+    const collectionVacacionesBase = database.collection("VACACIONES_BASE");
+    const vacacionesBaseDocs = [];
+    for (let periodo = 0; periodo <= 5; periodo++) {
+      vacacionesBaseDocs.push({
+      PERIODO: periodo,
+      FECHA_INI: null,
+      FECHA_FIN: null,
+      DIAS: null,
+      });
+    }
+    await collectionVacacionesBase.insertMany(vacacionesBaseDocs);
     if (permisos_economicos.length > 0) {
       await collectionPermisosEconomicos.insertMany(permisos_economicos);
     }
