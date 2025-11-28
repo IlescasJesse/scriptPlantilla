@@ -36,6 +36,9 @@ async function run() {
       "HSY_STATUS_EMPLEADO",
       "USERS_ACTIONS",
       "USER_ACTIONS",
+      "PER_VACACIONALES_BASE",
+      "PER_VACACIONALES_CONTRATO",
+      "PLANTILLA_FORANEA",
     ];
 
     console.log("Deleting specified collections...");
@@ -366,19 +369,21 @@ async function run() {
     const vacacionesContratoDocs = [];
     for (let periodo = 0; periodo <= 7; periodo++) {
       vacacionesContratoDocs.push({
-        PERIODO: periodo,
+        PERIODO: periodo + 1,
+        10: { FECHA_INI: null, FECHA_FIN: null },
         11: { FECHA_INI: null, FECHA_FIN: null },
+        12: { FECHA_INI: null, FECHA_FIN: null },
         13: { FECHA_INI: null, FECHA_FIN: null },
+        14: { FECHA_INI: null, FECHA_FIN: null },
         15: { FECHA_INI: null, FECHA_FIN: null },
-        17: { FECHA_INI: null, FECHA_FIN: null },
-        19: { FECHA_INI: null, FECHA_FIN: null },
+        16: { FECHA_INI: null, FECHA_FIN: null },
       });
     }
     await collectionVacacionesContrato.insertMany(vacacionesContratoDocs);
     const vacacionesBaseDocs = [];
     for (let periodo = 0; periodo <= 5; periodo++) {
       vacacionesBaseDocs.push({
-        PERIODO: periodo,
+        PERIODO: periodo + 1,
         11: { FECHA_INI: null, FECHA_FIN: null },
         13: { FECHA_INI: null, FECHA_FIN: null },
         15: { FECHA_INI: null, FECHA_FIN: null },

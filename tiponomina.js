@@ -12,6 +12,7 @@ const collectionLicencias = "LICENCIAS"; // Cambia esto por el nombre de tu cole
 const mysqlConnection = mysql.createConnection({
   host: "localhost",
   user: "root",
+  port: 3306,
   password: "",
   database: "sirh",
 });
