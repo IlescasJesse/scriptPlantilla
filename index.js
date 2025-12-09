@@ -39,6 +39,7 @@ async function run() {
       "PER_VACACIONALES_BASE",
       "PER_VACACIONALES_CONTRATO",
       "PLANTILLA_FORANEA",
+      "GAFETES_TEMPO",
     ];
 
     console.log("Deleting specified collections...");
@@ -341,6 +342,7 @@ async function run() {
         capacitaciones: [],
         id_plantilla: id,
         vacaciones: [],
+        talon: [],
       })
     );
     const resultBitacora = await collectionBitacora.insertMany(bitacoraArray);
