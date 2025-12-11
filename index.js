@@ -40,6 +40,7 @@ async function run() {
       "PER_VACACIONALES_CONTRATO",
       "PLANTILLA_FORANEA",
       "GAFETES_TEMPO",
+      "TALONES",
     ];
 
     console.log("Deleting specified collections...");
@@ -207,7 +208,7 @@ async function run() {
           : jsonObject["LICENCIA"];
       const licencia2 =
         jsonObject["LICENCIA1"] === null ||
-        jsonObject["LICENCIA1"] === undefined
+          jsonObject["LICENCIA1"] === undefined
           ? " "
           : jsonObject["LICENCIA1"];
       delete jsonObject["LICENCIA"];
@@ -346,7 +347,45 @@ async function run() {
       })
     );
     const resultBitacora = await collectionBitacora.insertMany(bitacoraArray);
+    // --- Inicio: crear colección TALONES (un documento por empleado con array TALONES de 24 items) ---
+    console.log("Generating TALONES collection (one document per employee with TALONES array)...");
 
+    const collectionTalones = database.collection("TALONES");
+    const talonesDocs = [];
+    const empleadosIds = Object.values(resultPlantilla.insertedIds); // array de ObjectId de PLANTILLA
+
+    for (const empleadoId of empleadosIds) {
+      const talonesArray = [];
+      for (let q = 1; q <= 24; q++) {
+        talonesArray.push({
+          _id: new ObjectId(),     // id único por talón (opcional)
+          QUINCENA: q,
+          FECHA_PAGO: null,        // asignar luego si se desea
+          status: 2,               // 0 = pendiente, 1 = pagado (ejemplo)
+        });
+      }
+
+      talonesDocs.push({
+        id_empleado: empleadoId,
+        TALONES: talonesArray,
+      });
+    }
+
+    // Insertar en batches por seguridad (evita grandes insertMany únicos)
+    const BATCH_SIZE = 500;
+    for (let i = 0; i < talonesDocs.length; i += BATCH_SIZE) {
+      const batch = talonesDocs.slice(i, i + BATCH_SIZE);
+      if (batch.length > 0) {
+        await collectionTalones.insertMany(batch, { ordered: false });
+      }
+    }
+    console.log(`Inserted ${talonesDocs.length} documents into TALONES (each with 24 talones).`);
+
+    // Crear índices útiles
+    await collectionTalones.createIndex({ id_empleado: 1 }, { unique: true });
+    await collectionTalones.createIndex({ "TALONES.QUINCENA": 1 });
+    await collectionTalones.createIndex({ "TALONES.status": 1 });
+    // --- Fin: TALONES ---
     const permisos_economicos = [];
     const incapacidades = [];
     const vacaciones = [];
