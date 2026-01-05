@@ -43,7 +43,10 @@ async function procesarPlantillatipoNOM() {
     const registrosLicencias = registros.filter(
       (registro) => registro.TIPONOM === "LS"
     );
-    registrosLicencias.forEach((licencia) => (licencia.status = 1));
+    registrosLicencias.forEach((licencia) => {
+      licencia.id_employee = licencia._id;
+      licencia.status = 1;
+    });
     if (registrosLicencias.length > 0) {
       const collectionLic = db.collection(collectionLicencias);
       await collectionLic.insertMany(registrosLicencias);
