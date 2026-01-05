@@ -9,6 +9,7 @@ const {
 } = require("./tiponomina");
 const { setProyect } = require("./setProyect");
 const { exec } = require("child_process");
+const { json } = require("stream/consumers");
 // const uri = "mongodb://mongoadmin:pb9*V82nY3An@172.17.90.58:3001";
 const uri = "mongodb://admin:1234@localhost:27017/";
 const client = new MongoClient(uri);
@@ -39,7 +40,6 @@ async function run() {
       "PER_VACACIONALES_BASE",
       "PER_VACACIONALES_CONTRATO",
       "PLANTILLA_FORANEA",
-      "GAFETES_TEMPO",
       "TALONES",
     ];
 
@@ -66,7 +66,7 @@ async function run() {
     // LEEMOS LA PLANTILLA
     console.log("Reading plantilla_test.xlsx...");
     const workbookPlantilla = new Excel.Workbook();
-    await workbookPlantilla.xlsx.readFile("plantilla_2025_test.xlsx");
+    await workbookPlantilla.xlsx.readFile("plantilla_2026_test.xlsx");
     const worksheetPlantilla = workbookPlantilla.getWorksheet(1);
     const headersPlantilla = worksheetPlantilla.getRow(1).values.slice(1);
 
@@ -128,7 +128,7 @@ async function run() {
       });
     });
 
-    console.log("Processing rows from plantilla_2025_test.xlsx...");
+    console.log("Processing rows from plantilla_2026_test.xlsx...");
     const jsonArray = [];
     const licenciaArray = [];
 
@@ -151,19 +151,35 @@ async function run() {
       ) {
         jsonObject["ID_CTRL_ASIST"] = new ObjectId();
       }
-
-      const domicilio1 =
-        jsonObject["DOMICILIO1"] === null ? " " : jsonObject["DOMICILIO1"];
-      const domicilio2 =
-        jsonObject["DOMICILIO2"] === null ? " " : jsonObject["DOMICILIO2"];
-      const domicilio = `${domicilio1} ${domicilio2}`;
-      jsonObject["DOMICILIO"] = domicilio === "   " ? null : domicilio;
+      // Asignar correctamente el domicilio combinando DOMICILIO1 y DOMICILIO2 si existen
+      const domicilio1 = jsonObject["DOMICILIO1"]
+        ? jsonObject["DOMICILIO1"].toString().trim()
+        : "";
+      const domicilio2 = jsonObject["DOMICILIO2"]
+        ? jsonObject["DOMICILIO2"].toString().trim()
+        : "";
+      let domicilio = domicilio1;
+      if (domicilio2 && domicilio2 !== domicilio1) {
+        domicilio =
+          domicilio2 && domicilio1
+            ? `${domicilio1} ${domicilio2}`
+            : domicilio1 || domicilio2 || " ";
+      }
+      jsonObject["DOMICILIO"] = domicilio.length > 0 ? domicilio : null;
       delete jsonObject["DOMICILIO1"];
       delete jsonObject["DOMICILIO2"];
 
       jsonObject["ADSCRIPCION"] = jsonObject["DEPARTAMENTO"];
-      delete jsonObject["DEPARTAMENTO"];
 
+      // Convert FECHA_INGRESO from DD/MM/YYYY to YYYY/MM/DD
+      if (
+        jsonObject["FECHA_INGRESO"] &&
+        typeof jsonObject["FECHA_INGRESO"] === "string" &&
+        jsonObject["FECHA_INGRESO"].includes("/")
+      ) {
+        const [day, month, year] = jsonObject["FECHA_INGRESO"].split("/");
+        jsonObject["FECHA_INGRESO"] = `${year}/${month}/${day}`;
+      }
       const profesion2 =
         jsonObject["PROFESION2"] === null ? " " : jsonObject["PROFESION2"];
       const profesion1 =
@@ -171,6 +187,34 @@ async function run() {
       const profesion = `${profesion1} ${profesion2}`;
 
       jsonObject["PROFES"] = profesion === "   " ? null : profesion;
+
+      // Remove everything after "." in TURNOMAT
+      if (
+        jsonObject["TURNOMAT"] &&
+        typeof jsonObject["TURNOMAT"] === "string"
+      ) {
+        jsonObject["TURNOMAT"] = jsonObject["TURNOMAT"].split(".")[0];
+      }
+      if (
+        jsonObject["CURP"] &&
+        typeof jsonObject["CURP"] === "string" &&
+        jsonObject["CURP"].length >= 10
+      ) {
+        const curp = jsonObject["CURP"].toUpperCase();
+        // CURP positions 5-10: YYMMDD
+        const fechaCurp = curp.substring(4, 10);
+        let year = fechaCurp.substring(0, 2);
+        const month = fechaCurp.substring(2, 4);
+        const day = fechaCurp.substring(4, 6);
+
+        // If year >= 00 and <= current year (e.g. 24), assume 2000+, else 1900+
+        const currentYear = new Date().getFullYear() % 100;
+        year = parseInt(year, 10) <= currentYear ? `20${year}` : `19${year}`;
+
+        jsonObject["FECHA_NAC"] = `${year}/${month}/${day}`;
+      } else {
+        jsonObject["FECHA_NAC"] = null;
+      }
       delete jsonObject["PROFESION"];
       delete jsonObject["PROFESION2"];
 
@@ -208,7 +252,7 @@ async function run() {
           : jsonObject["LICENCIA"];
       const licencia2 =
         jsonObject["LICENCIA1"] === null ||
-          jsonObject["LICENCIA1"] === undefined
+        jsonObject["LICENCIA1"] === undefined
           ? " "
           : jsonObject["LICENCIA1"];
       delete jsonObject["LICENCIA"];
@@ -252,6 +296,7 @@ async function run() {
         jsonObject["DEPARTAMENTO"] === null ? " " : jsonObject["DEPARTAMENTO"];
 
       licenciaObject["PROYECTO"] = proyecto;
+
       licenciaObject["DEPARTAMENTO"] = departamento;
       jsonObject["ID_CTRL_ASSIST"] = new ObjectId();
       jsonObject["ID_CTRL_TALON"] = new ObjectId();
@@ -328,63 +373,82 @@ async function run() {
 
     // Crear objetos bitácora después de insertar en PLANTILLA_2025
     const bitacoraArray = Object.values(resultPlantilla.insertedIds).map(
-      (id) => ({
-        personal: [
+      (id, index) => {
+        const empleado = jsonArray[index];
+        const personalEntries = [
           {
             autor: "SISTEMA",
             comentario: "GENERACIÓN DE PLANTILLA",
             fecha: new Date(),
           },
-        ],
-        incidencias: [],
-        nomina: [],
-        archivo: [],
-        tramites: [],
-        capacitaciones: [],
-        id_plantilla: id,
-        vacaciones: [],
-        talon: [],
-      })
+        ];
+
+        // Si la CLAVE es 105, agregar comentario con datos de MADRE y PADRE
+        if (empleado["CLAVE"] === 105) {
+          const madre = empleado["MADRE"] || "No especificada";
+          const padre = empleado["PADRE"] || "No especificado";
+          personalEntries.push({
+            autor: "SISTEMA",
+            comentario: `MADRE: ${madre} | PADRE: ${padre}`,
+            fecha: new Date(),
+          });
+        }
+
+        return {
+          personal: personalEntries,
+          incidencias: [],
+          nomina: [],
+          archivo: [],
+          tramites: [],
+          capacitaciones: [],
+          id_plantilla: id,
+          vacaciones: [],
+          talon: [],
+        };
+      }
     );
     const resultBitacora = await collectionBitacora.insertMany(bitacoraArray);
-    // --- Inicio: crear colección TALONES (un documento por empleado con array TALONES de 24 items) ---
-    console.log("Generating TALONES collection (one document per employee with TALONES array)...");
-
+    // --- Inicio: crear colección TALONES (un documento por empleado con array TALONES de 2 items para diciembre) ---
+    console.log("Creating TALONES collection...");
     const collectionTalones = database.collection("TALONES");
-    const talonesDocs = [];
-    const empleadosIds = Object.values(resultPlantilla.insertedIds); // array de ObjectId de PLANTILLA
 
-    for (const empleadoId of empleadosIds) {
-      const talonesArray = [];
-      for (let q = 1; q <= 24; q++) {
-        talonesArray.push({
-          _id: new ObjectId(),     // id único por talón (opcional)
-          QUINCENA: q,
-          FECHA_PAGO: null,        // asignar luego si se desea
-          status: 2,               // 0 = pendiente, 1 = pagado (ejemplo)
-        });
+    // Fechas de pago solo para diciembre 2025 (quincenas 23 y 24)
+    const fechasPagoDiciembre = {
+      23: "2025-12-15", // Primera quincena de diciembre (1-15)
+      24: "2025-12-31", // Segunda quincena de diciembre (16-31)
+    };
+
+    const talonesArray = Object.values(resultPlantilla.insertedIds).map(
+      (id) => {
+        // Crear array de solo 2 talones (quincenas 23 y 24 de diciembre)
+        const talones = [];
+        for (let quin = 23; quin <= 24; quin++) {
+          talones.push({
+            _id: new ObjectId(),
+            QUIN: quin,
+            FECHA_PAG: fechasPagoDiciembre[quin],
+            STATUS: 2,
+            FOLIO: null,
+          });
+        }
+
+        return {
+          _id: new ObjectId(),
+          _idEmployee: id,
+          TALONES: talones,
+        };
       }
+    );
 
-      talonesDocs.push({
-        id_empleado: empleadoId,
-        TALONES: talonesArray,
-      });
-    }
-
-    // Insertar en batches por seguridad (evita grandes insertMany únicos)
-    const BATCH_SIZE = 500;
-    for (let i = 0; i < talonesDocs.length; i += BATCH_SIZE) {
-      const batch = talonesDocs.slice(i, i + BATCH_SIZE);
-      if (batch.length > 0) {
-        await collectionTalones.insertMany(batch, { ordered: false });
-      }
-    }
-    console.log(`Inserted ${talonesDocs.length} documents into TALONES (each with 24 talones).`);
+    await collectionTalones.insertMany(talonesArray);
+    console.log(
+      `${talonesArray.length} documents inserted into TALONES collection (only December quincenas 23 & 24).`
+    );
 
     // Crear índices útiles
-    await collectionTalones.createIndex({ id_empleado: 1 }, { unique: true });
-    await collectionTalones.createIndex({ "TALONES.QUINCENA": 1 });
-    await collectionTalones.createIndex({ "TALONES.status": 1 });
+    await collectionTalones.createIndex({ _idEmployee: 1 });
+    await collectionTalones.createIndex({ "TALONES.QUIN": 1 });
+
     // --- Fin: TALONES ---
     const permisos_economicos = [];
     const incapacidades = [];
