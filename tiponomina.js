@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // Configuración de la conexión a MongoDB
 const uri = "mongodb://localhost:27017"; // Cambia esto según tu configuración
-const dbName = "sirhTest";
+const dbName = "SIRH2026";
 const collectionName = "PLANTILLA";
 const collectionLicencias = "LICENCIAS"; // Cambia esto por el nombre de tu colección
 

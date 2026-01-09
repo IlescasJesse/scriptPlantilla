@@ -84,7 +84,7 @@ async function main() {
 
   try {
     await client.connect();
-    const databaseName = "sirhTest";
+    const databaseName = "SIRH2026";
     const collectionName = "CALENDARIO";
 
     // Elimina la colección si existe
