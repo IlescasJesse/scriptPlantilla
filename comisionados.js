@@ -27,7 +27,7 @@ const actualizarPlantillaDesdeMongo = async () => {
   try {
     console.log("Conectando a MongoDB...");
     await client.connect();
-    const database = client.db("sirhTest");
+    const database = client.db("SIRH2026");
     const collectionPlantilla = database.collection("PLANTILLA");
 
     console.log("Obteniendo registros de la colección PLANTILLA...");

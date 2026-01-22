@@ -18,7 +18,7 @@ async function run() {
   try {
     console.log("Connecting to MongoDB...");
     await client.connect();
-    const database = client.db("sirhTest");
+    const database = client.db("SIRH2026");
     const collectionsToDelete = [
       "BAJAS",
       "BITACORA",
