@@ -18,7 +18,7 @@ async function run() {
   try {
     console.log("Connecting to MongoDB...");
     await client.connect();
-    const database = client.db("SIRH2026");
+    const database = client.db("sirhTest");
     const collectionsToDelete = [
       "BAJAS",
       "BITACORA",
@@ -72,9 +72,13 @@ async function run() {
 
     // LEEMOS COMISIONADOS
     console.log("Reading COMISIONADOS_SINDICALES.xlsx...");
-    const workbookVacaciones = new Excel.Workbook();
-    await workbookVacaciones.xlsx.readFile("VACACIONES.xlsx");
-    const worksheetVacaciones = workbookVacaciones.getWorksheet("vacaciones");
+    const workbookVacacionesConf = new Excel.Workbook();
+    await workbookVacacionesConf.xlsx.readFile("VACACIONES_CONFIANZA.xlsx");
+    const worksheetVacacionesConf = workbookVacacionesConf.getWorksheet("vacaciones");
+
+    const workbookVacacionesBase = new Excel.Workbook();
+    await workbookVacacionesBase.xlsx.readFile("VACACIONES_BASE.xlsx");
+    const worksheetVacacionesBase = workbookVacacionesBase.getWorksheet("vacaciones");
 
     const workbookComisionados = new Excel.Workbook();
     await workbookComisionados.xlsx.readFile("COMISIONADOS_SINDICALES.xlsx");
@@ -86,12 +90,12 @@ async function run() {
     console.log("Names extracted from COMISIONADOS_SINDICALES.xlsx.");
 
     // LEEMOS TARJETAS
-    console.log("Reading TARJETAS.xlsx...");
-    const workbookTarjetas = new Excel.Workbook();
-    await workbookTarjetas.xlsx.readFile("TARJETAS.xlsx");
+    console.log("Reading TARJETAS_CENTRAL.xlsx...");
+    const workbookTarjetasCentral = new Excel.Workbook();
+    await workbookTarjetasCentral.xlsx.readFile("TARJETAS_CENTRAL.xlsx");
 
-    const tarjetasData = [];
-    workbookTarjetas.eachSheet((worksheet) => {
+    const tarjetasDataCentral = [];
+    workbookTarjetasCentral.eachSheet((worksheet) => {
       const nombreIndex = 3; // Columna "NOMBRE"
       const numIndex = 1; // Columna "NUM"
 
@@ -101,7 +105,7 @@ async function run() {
         const nombre = row.getCell(nombreIndex).value;
         const numTarjeta = row.getCell(numIndex).value;
         if (nombre && numTarjeta) {
-          tarjetasData.push({
+          tarjetasDataCentral.push({
             nombre: nombre
               .trim()
               .replace(/\s{2,}/g, " ")
@@ -112,6 +116,17 @@ async function run() {
           });
         }
       });
+    });
+
+    // LEEMOS TARJETAS PLANEACIÓN
+    console.log("Reading TARJETAS_PLANEACION.xlsx...");
+    const workbookTarjetasPlaneacion = new Excel.Workbook();
+    await workbookTarjetasPlaneacion.xlsx.readFile("TARJETAS_PLANEACION.xlsx");
+
+    const tarjetasDataPlaneacion = [];
+    workbookTarjetasPlaneacion.eachSheet((worksheet) => {
+      const nombreIndex = 2; // Columna "NOMBRE"
+      const numIndex = 1; // Columna "NUM"
 
       // Procesar las filas
       worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
@@ -119,8 +134,41 @@ async function run() {
         const nombre = row.getCell(nombreIndex).value;
         const numTarjeta = row.getCell(numIndex).value;
         if (nombre && numTarjeta) {
-          tarjetasData.push({
-            nombre: nombre.trim().toUpperCase(),
+          tarjetasDataPlaneacion.push({
+            nombre: nombre
+              .trim()
+              .replace(/\s{2,}/g, " ")
+              .replace(/\.$/, "")
+              .toUpperCase(),
+            numTarjeta: numTarjeta,
+            horario: row.getCell(5).value,
+          });
+        }
+      });
+    });
+
+    // LEEMOS TARJETAS PLANEACIÓN
+    console.log("Reading TARJETAS_AUDITORIA.xlsx...");
+    const workbookTarjetasAuditoria = new Excel.Workbook();
+    await workbookTarjetasAuditoria.xlsx.readFile("TARJETAS_AUDITORIA.xlsx");
+
+    const tarjetasDataAuditoria = [];
+    workbookTarjetasAuditoria.eachSheet((worksheet) => {
+      const nombreIndex = 2; // Columna "NOMBRE"
+      const numIndex = 1; // Columna "NUM"
+
+      // Procesar las filas
+      worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
+        if (rowNumber === 1) return; // Saltar encabezados
+        const nombre = row.getCell(nombreIndex).value;
+        const numTarjeta = row.getCell(numIndex).value;
+        if (nombre && typeof nombre === 'string' && numTarjeta) {
+          tarjetasDataAuditoria.push({
+            nombre: nombre
+              .trim()
+              .replace(/\s{2,}/g, " ")
+              .replace(/\.$/, "")
+              .toUpperCase(),
             numTarjeta: numTarjeta,
             horario: row.getCell(5).value,
           });
@@ -227,13 +275,36 @@ async function run() {
         jsonObject["APE_MAT"] = nombreParts[1] || null;
         jsonObject["NOMBRES"] = nombreParts.slice(2).join(" ") || null;
 
-        // Compare with TARJETAS.xlsx
-        const tarjetaMatch = tarjetasData.find(
-          (tarjeta) => tarjeta.nombre === jsonObject["NOMBRE"]
+        // Normalizar el nombre del empleado para comparación
+        const normalizedNombre = jsonObject["NOMBRE"]
+          .trim()
+          .replace(/\s{2,}/g, " ")
+          .replace(/\.$/, "")
+          .toUpperCase();
+
+        // Compare with TARJETAS_CENTRAL.xlsx
+        const tarjetaMatch = tarjetasDataCentral.find(
+          (tarjeta) => tarjeta.nombre === normalizedNombre
         );
         jsonObject["NUMTARJETA"] = tarjetaMatch
           ? tarjetaMatch.numTarjeta
           : null;
+
+        // Compare with TARJETAS_PLANEACION.xlsx (sobrescribe si coincide)
+        const tarjetaPlanMatch = tarjetasDataPlaneacion.find(
+          (tarjeta) => tarjeta.nombre === normalizedNombre
+        );
+        if (tarjetaPlanMatch) {
+          jsonObject["NUMTARJETA"] = tarjetaPlanMatch.numTarjeta;
+        }
+
+        // Compare with TARJETAS_AUDITORIA.xlsx (sobrescribe si coincide)
+        const tarjetaAudMatch = tarjetasDataAuditoria.find(
+          (tarjeta) => tarjeta.nombre === normalizedNombre
+        );
+        if (tarjetaAudMatch) {
+          jsonObject["NUMTARJETA"] = tarjetaAudMatch.numTarjeta;
+        }
 
         delete jsonObject["NOMBRE"];
       } else {
@@ -252,7 +323,7 @@ async function run() {
           : jsonObject["LICENCIA"];
       const licencia2 =
         jsonObject["LICENCIA1"] === null ||
-        jsonObject["LICENCIA1"] === undefined
+          jsonObject["LICENCIA1"] === undefined
           ? " "
           : jsonObject["LICENCIA1"];
       delete jsonObject["LICENCIA"];
@@ -303,8 +374,8 @@ async function run() {
       jsonObject["ID_CTRL_NOM"] = new ObjectId();
       jsonObject["ID_CTRL_CAP"] = new ObjectId();
       // Buscar coincidencia en worksheetVacaciones por NUMPLA
-      let vacacionesMatch = null;
-      worksheetVacaciones.eachRow(
+      let vacacionesMatchConfianza = null;
+      worksheetVacacionesConf.eachRow(
         { includeEmpty: true },
         (vacRow, vacRowNumber) => {
           if (vacRowNumber === 1) return; // Saltar encabezados
@@ -319,14 +390,41 @@ async function run() {
               const [day, month, year] = fechaVac.split("/");
               fechaVac = `${year}/${month}/${day}`;
             }
-            vacacionesMatch = {
+            vacacionesMatchConfianza = {
               PERIODO: 0, // Ajusta el índice si es diferente
               FECHA_VACACIONES: fechaVac,
             };
           }
         }
       );
-      jsonObject["VACACIONES"] = vacacionesMatch || {
+
+      // Buscar coincidencia en worksheetVacacionesBase por NUMEMP
+      let vacacionesMatchBase = null;
+      worksheetVacacionesBase.eachRow(
+        { includeEmpty: true },
+        (vacRow, vacRowNumber) => {
+          if (vacRowNumber === 1) return; // Saltar encabezados
+          const NUE = parseInt(vacRow.getCell(3).value, 10); // Ajusta el índice si es diferente
+          if (NUE === jsonObject["NUMEMP"]) {
+            let fechaVac = vacRow.getCell(4).value || null;
+            if (
+              fechaVac &&
+              typeof fechaVac === "string" &&
+              fechaVac.includes("/")
+            ) {
+              const [day, month, year] = fechaVac.split("/");
+              fechaVac = `${year}/${month}/${day}`;
+            }
+            vacacionesMatchBase = {
+              PERIODO: 0, // Ajusta el índice si es diferente
+              FECHA_VACACIONES: fechaVac,
+            };
+          }
+        }
+      );
+
+
+      jsonObject["VACACIONES"] = vacacionesMatchConfianza || vacacionesMatchBase || {
         PERIODO: 0,
         FECHA_VACACIONES: null,
       };
