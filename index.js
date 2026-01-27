@@ -18,7 +18,7 @@ async function run() {
   try {
     console.log("Connecting to MongoDB...");
     await client.connect();
-    const database = client.db("SIRH2026");
+    const database = client.db("sirhTest");
     const collectionsToDelete = [
       "BAJAS",
       "BITACORA",
@@ -74,11 +74,13 @@ async function run() {
     console.log("Reading COMISIONADOS_SINDICALES.xlsx...");
     const workbookVacacionesConf = new Excel.Workbook();
     await workbookVacacionesConf.xlsx.readFile("VACACIONES_CONFIANZA.xlsx");
-    const worksheetVacacionesConf = workbookVacacionesConf.getWorksheet("vacaciones");
+    const worksheetVacacionesConf =
+      workbookVacacionesConf.getWorksheet("vacaciones");
 
     const workbookVacacionesBase = new Excel.Workbook();
     await workbookVacacionesBase.xlsx.readFile("VACACIONES_BASE.xlsx");
-    const worksheetVacacionesBase = workbookVacacionesBase.getWorksheet("vacaciones");
+    const worksheetVacacionesBase =
+      workbookVacacionesBase.getWorksheet("vacaciones");
 
     const workbookComisionados = new Excel.Workbook();
     await workbookComisionados.xlsx.readFile("COMISIONADOS_SINDICALES.xlsx");
@@ -162,7 +164,7 @@ async function run() {
         if (rowNumber === 1) return; // Saltar encabezados
         const nombre = row.getCell(nombreIndex).value;
         const numTarjeta = row.getCell(numIndex).value;
-        if (nombre && typeof nombre === 'string' && numTarjeta) {
+        if (nombre && typeof nombre === "string" && numTarjeta) {
           tarjetasDataAuditoria.push({
             nombre: nombre
               .trim()
@@ -323,7 +325,7 @@ async function run() {
           : jsonObject["LICENCIA"];
       const licencia2 =
         jsonObject["LICENCIA1"] === null ||
-          jsonObject["LICENCIA1"] === undefined
+        jsonObject["LICENCIA1"] === undefined
           ? " "
           : jsonObject["LICENCIA1"];
       delete jsonObject["LICENCIA"];
@@ -423,11 +425,11 @@ async function run() {
         }
       );
 
-
-      jsonObject["VACACIONES"] = vacacionesMatchConfianza || vacacionesMatchBase || {
-        PERIODO: 0,
-        FECHA_VACACIONES: null,
-      };
+      jsonObject["VACACIONES"] = vacacionesMatchConfianza ||
+        vacacionesMatchBase || {
+          PERIODO: 0,
+          FECHA_VACACIONES: null,
+        };
 
       if (
         (jsonObject["NOMBRES"] && jsonObject["NOMBRES"].includes("VACANTE")) ||
@@ -506,21 +508,20 @@ async function run() {
       }
     );
     const resultBitacora = await collectionBitacora.insertMany(bitacoraArray);
-    // --- Inicio: crear colección TALONES (un documento por empleado con array TALONES de 2 items para diciembre) ---
+    // --- Inicio: crear colección TALONES (un documento por empleado con array TALONES de 1 item para enero) ---
     console.log("Creating TALONES collection...");
     const collectionTalones = database.collection("TALONES");
 
-    // Fechas de pago solo para diciembre 2025 (quincenas 23 y 24)
+    // Fecha de pago solo para la primera quincena de enero 2026 (quincena 1)
     const fechasPagoDiciembre = {
-      23: "2025-12-15", // Primera quincena de diciembre (1-15)
-      24: "2025-12-31", // Segunda quincena de diciembre (16-31)
+      1: "2026-01-15", // Primera quincena de enero (1-15)
     };
 
     const talonesArray = Object.values(resultPlantilla.insertedIds).map(
       (id) => {
-        // Crear array de solo 2 talones (quincenas 23 y 24 de diciembre)
+        // Crear array de solo 1 talón (quincena 1 de enero)
         const talones = [];
-        for (let quin = 23; quin <= 24; quin++) {
+        for (let quin = 1; quin <= 1; quin++) {
           talones.push({
             _id: new ObjectId(),
             QUIN: quin,
@@ -540,7 +541,7 @@ async function run() {
 
     await collectionTalones.insertMany(talonesArray);
     console.log(
-      `${talonesArray.length} documents inserted into TALONES collection (only December quincenas 23 & 24).`
+      `${talonesArray.length} documents inserted into TALONES collection (only January quincena 1).`
     );
 
     // Crear índices útiles
