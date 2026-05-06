@@ -1,119 +1,162 @@
 const { MongoClient } = require("mongodb");
-const mysql = require("mysql");
 const fs = require("fs");
 
 // Configuración de la conexión a MongoDB
-const uri = "mongodb://localhost:27017"; // Cambia esto según tu configuración
+const uri = "mongodb://localhost:27017";
 const dbName = "SIRH2026";
-const collectionName = "PLANTILLA";
-const collectionLicencias = "LICENCIAS"; // Cambia esto por el nombre de tu colección
+const projectField = "PROYECTO";
+const projectList = [
+  "114004148010000010@",
+  "1140041480100000101",
+  "1140041480100000102",
+  "1140041480100000103",
+  "1140041480100000104",
+  "1140041480100000105",
+  "1140041480100000106",
+  "1140041480100000107",
+  "1140041480100000108",
+  "1140041480100000109",
+  "114004148010000010A",
+  "114004148010000010B",
+  "114004148010000010C",
+  "114004148010000010D",
+  "114004148010000010E",
+  "114004148010000010F",
+  "114004148010000010G",
+  "114004148010000010H",
+  "114004148010000010I",
+  "114004148010000010J",
+  "114004148010000010K",
+  "114004148010000010L",
+  "114004148010000010M",
+  "114004148010000010N",
+  "114004148010000010O",
+  "114004148010000010P",
+  "114004148010000010Q",
+  "114004148010000010R",
+  "114004148010000010S",
+  "114004148010000010T",
+  "114004148010000010U",
+  "114004148010000010W",
+  "114004148010000010X",
+  "114004148010000010Z",
+];
 
-// Configuración de la conexión a MySQL
-const mysqlConnection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  port: 3306,
-  password: "",
-  database: "sirh",
-});
-
-// Conectar a la base de datos MySQL
-mysqlConnection.connect((err) => {
-  if (err) {
-    console.error("Error al conectar a MySQL:", err);
-    return;
-  }
-  console.log("Conexión a MySQL establecida correctamente.");
-});
-
-async function procesarPlantillatipoNOM() {
+// Helper que procesa TIPONOM en cualquier colección
+async function procesarTipoNOMEn(collectionName) {
   const client = new MongoClient(uri);
-  const noCoincidentes = []; // Array para almacenar los registros sin coincidencia
+  const noCoincidentes = [];
 
   try {
-    // Conexión a la base de datos
     await client.connect();
     const db = client.db(dbName);
-    const collection = db.collection(collectionName);
+    const col = db.collection(collectionName);
 
-    // Consulta a la colección PLANTILLA
-    const registros = await collection.find({}).toArray();
+    const registros = await col.find({}).toArray();
 
-    // Filtrar registros con TIPONOM igual a 'LS'
-    const registrosLicencias = registros.filter(
-      (registro) => registro.TIPONOM === "LS"
-    );
-    registrosLicencias.forEach((licencia) => {
-      licencia.id_employee = licencia._id;
-      licencia.status = 1;
-    });
-    if (registrosLicencias.length > 0) {
-      const collectionLic = db.collection(collectionLicencias);
-      await collectionLic.insertMany(registrosLicencias);
-      console.log(
-        "Registros con TIPONOM 'LS' insertados en la colección LICENCIAS."
-      );
-    }
-
-    // Consulta a la tabla categorias_catalogo en MySQL
-    const categorias = await new Promise((resolve, reject) => {
-      mysqlConnection.query(
-        "SELECT * FROM categorias_catalogo",
-        (err, results) => {
-          if (err) {
-            return reject(err);
-          }
-          resolve(results);
-        }
-      );
-    });
-
-    console.log("Categorías obtenidas correctamente.");
-
-    // Procesar cada registro
     for (const registro of registros) {
-      const categoriaCoincidente = categorias.find(
-        (categoria) => categoria.CLAVE_CATEGORIA === registro.CLAVECAT
-      );
+      const proyecto = registro[projectField];
+      const tipOriginal = (registro.TIPONOM || "").toUpperCase();
 
-      if (categoriaCoincidente) {
-        // Actualizar las propiedades del registro
-        registro.TIPONOM = categoriaCoincidente.T_NOMINA;
-        registro.NIVEL = categoriaCoincidente.NIVEL;
-        registro.NOMCATE = categoriaCoincidente.DESCRIPCION;
+      if (tipOriginal === "B") {
+        if (!proyecto) {
+          noCoincidentes.push(registro);
+          continue;
+        }
+        const nuevoTip = projectList.includes(proyecto) ? "F51" : "M51";
+        if (nuevoTip !== registro.TIPONOM) {
+          await col.updateOne(
+            { _id: registro._id },
+            { $set: { TIPONOM: nuevoTip } }
+          );
+          console.log(
+            `${collectionName} NUMPLA ${registro.NUMPLA || registro._id}: TIPONOM '${registro.TIPONOM}' -> '${nuevoTip}'.`
+          );
+        }
+        continue;
+      }
 
-        // Actualizar el registro en la base de datos
-        await collection.updateOne({ _id: registro._id }, { $set: registro });
-        console.log(
-          `Registro con CLAVECAT ${registro.CLAVECAT} actualizado correctamente.`
-        );
-      } else {
-        // Agregar el registro al array de no coincidentes
+      if (tipOriginal === "CC") {
+        if (!proyecto) {
+          noCoincidentes.push(registro);
+          continue;
+        }
+        const nuevoTip = projectList.includes(proyecto) ? "FCT" : "CCT";
+        if (nuevoTip !== registro.TIPONOM) {
+          await col.updateOne(
+            { _id: registro._id },
+            { $set: { TIPONOM: nuevoTip } }
+          );
+          console.log(
+            `${collectionName} NUMPLA ${registro.NUMPLA || registro._id}: TIPONOM '${registro.TIPONOM}' -> '${nuevoTip}'.`
+          );
+        }
+        continue;
+      }
+
+      if (tipOriginal === "CN") {
+        if (!proyecto) {
+          noCoincidentes.push(registro);
+          continue;
+        }
+        const nuevoTip = projectList.includes(proyecto) ? "FCO" : "511";
+        if (nuevoTip !== registro.TIPONOM) {
+          await col.updateOne(
+            { _id: registro._id },
+            { $set: { TIPONOM: nuevoTip } }
+          );
+          console.log(
+            `${collectionName} NUMPLA ${registro.NUMPLA || registro._id}: TIPONOM '${registro.TIPONOM}' -> '${nuevoTip}'.`
+          );
+        }
+        continue;
+      }
+
+      if (tipOriginal === "MM") {
+        if (!proyecto) {
+          noCoincidentes.push(registro);
+          continue;
+        }
+        const nuevoTip = projectList.includes(proyecto) ? "FMM" : "MMS";
+        if (nuevoTip !== registro.TIPONOM) {
+          await col.updateOne(
+            { _id: registro._id },
+            { $set: { TIPONOM: nuevoTip } }
+          );
+          console.log(
+            `${collectionName} NUMPLA ${registro.NUMPLA || registro._id}: TIPONOM '${registro.TIPONOM}' -> '${nuevoTip}'.`
+          );
+        }
+        continue;
+      }
+
+      if (tipOriginal && tipOriginal !== "LS") {
         noCoincidentes.push(registro);
       }
     }
 
-    // Escribir los registros no coincidentes en un archivo JSON
     if (noCoincidentes.length > 0) {
       fs.writeFileSync(
         "noCoincidentes.json",
         JSON.stringify(noCoincidentes, null, 2),
         "utf-8"
       );
-      console.log(
-        "Registros no coincidentes guardados en noCoincidentes.json."
-      );
+      console.log("Registros no coincidentes guardados en noCoincidentes.json.");
     }
   } catch (error) {
-    console.error("Error al procesar la plantilla:", error);
+    console.error(`Error al procesar ${collectionName}:`, error);
   } finally {
-    // Cerrar la conexión
     await client.close();
-    mysqlConnection.end(); // Finalizar la conexión MySQL
-    console.log("Proceso completado y conexiones cerradas.");
   }
 }
 
+// Función pública que ejecuta el helper sobre PLANTILLA y LICENCIAS
+async function procesarPlantillatipoNOM() {
+  await procesarTipoNOMEn("PLANTILLA");
+  await procesarTipoNOMEn("LICENCIAS");
+}
+
+// Actualizar TIPONOM en PLAZAS basándose en PLANTILLA
 async function actualizarTiponomEnPlazas() {
   await new Promise((resolve) => {
     setTimeout(() => {
@@ -121,43 +164,38 @@ async function actualizarTiponomEnPlazas() {
       resolve();
     }, 5000);
   });
+
   const client = new MongoClient(uri);
-  const collectionPlazas = "PLAZAS"; // Nombre de la colección PLAZAS
 
   try {
-    // Conexión a la base de datos
     await client.connect();
     const db = client.db(dbName);
-    const collectionPlantilla = db.collection(collectionName);
-    const collectionPlazas = db.collection("PLAZAS"); // Cambia esto por el nombre de tu colección PLAZAS
+    const collectionPlantilla = db.collection("PLANTILLA");
+    const collectionPlazas = db.collection("PLAZAS");
 
-    // Obtener todos los registros de la colección PLANTILLA
     const registrosPlantilla = await collectionPlantilla.find({}).toArray();
 
-    // Procesar cada registro de la colección PLANTILLA
     for (const registroPlantilla of registrosPlantilla) {
-      // Buscar coincidencias en la colección PLAZAS
       const resultadoPlaza = await collectionPlazas.findOne({
         NUMPLA: registroPlantilla.NUMPLA,
       });
 
       if (resultadoPlaza) {
-        // Actualizar el valor de TIPONOM en la colección PLAZAS
         await collectionPlazas.updateOne(
           { _id: resultadoPlaza._id },
           { $set: { TIPONOM: registroPlantilla.TIPONOM } }
         );
         console.log(
-          `TIPONOM actualizado en PLAZAS para NUMPLA ${registroPlantilla.NUMPLA}.`
+          `TIPONOM actualizado en PLAZAS para NUMPLA ${registroPlantilla.NUMPLA}: ${registroPlantilla.TIPONOM}`
         );
       }
     }
   } catch (error) {
     console.error("Error al actualizar TIPONOM en PLAZAS:", error);
   } finally {
-    // Cerrar la conexión
     await client.close();
     console.log("Proceso de actualización completado y conexión cerrada.");
   }
 }
+
 module.exports = { procesarPlantillatipoNOM, actualizarTiponomEnPlazas };

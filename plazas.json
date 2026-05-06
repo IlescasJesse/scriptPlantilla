@@ -122,17 +122,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: CRUZ HERNANDEZ IÑIGO EDGAR",
+        "NOMBRE": "MILLAN GARCIA MONICA GUADALUPE",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/10/2021"
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 22860,
     "TIPONOM": "CC",
     "PROYECTO": "1140020000000000220",
-    "DEPARTAMENTO": "DEPARTAMENTO DE SERVICIOS GENERALES",
-    "status": 1
+    "DEPARTAMENTO": "DEPARTAMENTO DE RECURSOS HUMANOS",
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -230,13 +230,13 @@
         "NOMBRE": "PLAZA DE NUEVA CREACION",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "02/05/2017 EN COORDINACIÓN"
+        "MOTIVO_BAJA": "02/05/2017"
       }
     ],
     "NUMPLA": 19059,
     "TIPONOM": "CN",
     "PROYECTO": "1140041480100000100",
-    "DEPARTAMENTO": "DIRECCIÓN DE INGRESOS Y RECAUDACIÓN",
+    "DEPARTAMENTO": "DEPARTAMENTO DE ADMINISTRACION TRIBUTARIA",
     "status": 1
   },
   {
@@ -536,7 +536,7 @@
     "NUMPLA": 25311,
     "TIPONOM": "CC",
     "PROYECTO": "114004148010000010W",
-    "DEPARTAMENTO": "CIAC DE VILLA DE ETLA",
+    "DEPARTAMENTO": "CIAC. DE VILLA DE ETLA",
     "status": 1
   },
   {
@@ -1360,7 +1360,7 @@
     "NUMPLA": 23573,
     "TIPONOM": "B",
     "PROYECTO": "1140020000000000200",
-    "DEPARTAMENTO": "DIRECCIÓN DE PRESUPUESTO",
+    "DEPARTAMENTO": "DEPARTAMENTO DE PRESUPUESTO \"A\"",
     "status": 1
   },
   {
@@ -1369,7 +1369,7 @@
         "NOMBRE": "ALTA QNA 172022 SIN DOCUMENTACION",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "SINDICATO 31122024"
+        "MOTIVO_BAJA": "SINDICATO 31122024 EXIMA 1601 A 30062026"
       }
     ],
     "NUMPLA": 22138,
@@ -1706,21 +1706,6 @@
     "TIPONOM": "B",
     "PROYECTO": "1140041480100000111",
     "DEPARTAMENTO": "DEPARTAMENTO DE CONTROL DE INGRESOS",
-    "status": 1
-  },
-  {
-    "previousOcuppants": [
-      {
-        "NOMBRE": "CUBRE LS DE DIAZ REYES SARAHI RUTH",
-        "FECHA": null,
-        "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "X TRES AÑOS 01012023 A 31122025"
-      }
-    ],
-    "NUMPLA": 22763,
-    "TIPONOM": "B",
-    "PROYECTO": "1140020000000000200",
-    "DEPARTAMENTO": "DEPARTAMENTO DE REGISTRO Y CONTROL DE CRÉDITOS",
     "status": 1
   },
   {
@@ -3893,7 +3878,7 @@
       }
     ],
     "NUMPLA": 20157,
-    "TIPONOM": "B",
+    "TIPONOM": "LS",
     "PROYECTO": "1140010000000000100",
     "DEPARTAMENTO": "OFICINA DEL SECRETARIO",
     "status": 1
@@ -5494,7 +5479,7 @@
         "NOMBRE": "PLAZA DE NUEVA CREACION 2A.QNA.SEP 2016",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADO 0107 A 31122025"
+        "MOTIVO_BAJA": "PRORROGA EXIMA 0101 A 30062026"
       }
     ],
     "NUMPLA": 23341,
@@ -6124,7 +6109,7 @@
         "NOMBRE": "CUBRE A: ORTIZ PEÑA NANCY",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/01/2018"
+        "MOTIVO_BAJA": "RENUNCIA 31/01/2018   PLAZA D. ADMVA."
       }
     ],
     "NUMPLA": 22432,
@@ -7246,7 +7231,7 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA D. ADMVA. ASIGNADA 0107 A 31122025",
+        "NOMBRE": "PLAZA D. ADMVA. ASIGNADA 0101 A 30062026",
         "FECHA": null,
         "FECHA_BAJA": null,
         "MOTIVO_BAJA": " "
@@ -7276,10 +7261,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA D. ADMVA.",
+        "NOMBRE": "PLAZA DIRECCION ADMINISTRATIVA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADA 0107 A 31122025"
+        "MOTIVO_BAJA": "ASIGNADA 0101 A 30062026"
       }
     ],
     "NUMPLA": 2504,
@@ -7489,7 +7474,7 @@
         "NOMBRE": "CUBRE A: REFFREGER RAMOS EDITH",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 15/01/2020.ASIGNADO 0107 311225"
+        "MOTIVO_BAJA": "RENUNCIA 15/01/2020.ASIGNADO 0101 300626"
       }
     ],
     "NUMPLA": 5394,
@@ -7763,7 +7748,7 @@
       }
     ],
     "NUMPLA": 2651,
-    "TIPONOM": "LS",
+    "TIPONOM": "B",
     "PROYECTO": "1140020000000000200",
     "DEPARTAMENTO": "COORDINACIÓN DE CENTROS INTEGRALES DE ATENCIÓN AL CONTRIBUYENTE",
     "status": 1
@@ -8779,7 +8764,7 @@
         "NOMBRE": "REGRESA A SU BASE 16/04/2018",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "SOLICITUD DE EXIMA 12122025"
+        "MOTIVO_BAJA": "EXIMA 0101 A 30062026"
       }
     ],
     "NUMPLA": 21430,
@@ -9391,10 +9376,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA D. ADMVA.",
+        "NOMBRE": "PLAZA DIRECCION ADMINISTRATIVA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADO 0107 A 31122025"
+        "MOTIVO_BAJA": "ASIGNADO 0101 A 30062026"
       }
     ],
     "NUMPLA": 23364,
@@ -11596,17 +11581,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: CABRERA SANCHEZ GABRIEL",
+        "NOMBRE": "VELASCO PACHECO LORENA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/12/2021"
+        "MOTIVO_BAJA": "RENUNCIA 15/02/2026"
       }
     ],
     "NUMPLA": 23184,
     "TIPONOM": "CC",
     "PROYECTO": "1140020000000000200",
-    "DEPARTAMENTO": "DIRECCIÓN DE PRESUPUESTO",
-    "status": 1
+    "DEPARTAMENTO": "DIRECCIÓN ADMINISTRATIVA",
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -12004,7 +11989,7 @@
         "NOMBRE": "PLAZA FUERA DE ESTRUCTURA. 2A.ABRIL/2016",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "PLAZA D. ADMVA. ASIGNADA 0107 A 31122025"
+        "MOTIVO_BAJA": "PLAZA D. ADMVA. ASIGNADA 0101 A 30062026"
       }
     ],
     "NUMPLA": 16685,
@@ -12019,7 +12004,7 @@
         "NOMBRE": "2A. QNA. DE OCTUBRE 2015",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0107 A 31122025"
+        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0101 A 30062026"
       }
     ],
     "NUMPLA": 94,
@@ -12034,7 +12019,7 @@
         "NOMBRE": "2A AGOSTO 2016 C.  01/11/2016 B",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0107 A 31122025"
+        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0101 A 30062026"
       }
     ],
     "NUMPLA": 2853,
@@ -12076,7 +12061,7 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "BASE A PARTIR DE LA PRIMERA QNA OCT 2015",
         "FECHA": null,
         "FECHA_BAJA": null,
         "MOTIVO_BAJA": " "
@@ -13324,7 +13309,7 @@
         "NOMBRE": "PLAZA DE NUEVA CREACION 1A. OCT, 2016",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0107 A 31122025"
+        "MOTIVO_BAJA": "PLAZA D.ADMVA. ASIGNADO 0101 A 30062026"
       }
     ],
     "NUMPLA": 23431,
@@ -13804,7 +13789,7 @@
         "NOMBRE": "2A. SEP. 2016",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "LIC. X GRAVIDEZ 0108 A 31102019"
       }
     ],
     "NUMPLA": 11854,
@@ -14110,7 +14095,7 @@
     "NUMPLA": 1450,
     "TIPONOM": "B",
     "PROYECTO": "1140031490100000110",
-    "DEPARTAMENTO": "DEPARTAMENTO DE GESTIÓN PRESUPUESTARIA \"A\"",
+    "DEPARTAMENTO": "DIRECCION DE PRESUPUESTO",
     "status": 1
   },
   {
@@ -14986,10 +14971,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: ISIDRO TENORIO ROLANDO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 3148,
@@ -15094,7 +15079,7 @@
         "NOMBRE": "CUBRE A: SOLER HUERTA OSCAR SERGIO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/03/2021"
+        "MOTIVO_BAJA": "RENUNCIA 31/03/2021 H.ESPECIAL1601300626"
       }
     ],
     "NUMPLA": 23565,
@@ -15544,7 +15529,7 @@
         "NOMBRE": "PLAZA DE NUEVA CREACION.",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADA 0110 A 31122025"
+        "MOTIVO_BAJA": "ASIGNADA 0101 A 30062026"
       }
     ],
     "NUMPLA": 22132,
@@ -15556,17 +15541,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: MARTINEZ DE LOS SANTOS ADA MA.",
+        "NOMBRE": "BAUTISTA RAMIREZ ALBERTO MIGUEL",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 29/02/2008"
+        "MOTIVO_BAJA": "RENUNCIA 15/02/2026"
       }
     ],
     "NUMPLA": 5449,
     "TIPONOM": "CC",
     "PROYECTO": "1140041480100000228",
     "DEPARTAMENTO": "DEPARTAMENTO DE PROGRAMACIÓN FEDERAL Y ESTATAL",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -15766,17 +15751,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: RAMIREZ SANCHEZ MARIA GORETI",
+        "NOMBRE": "MELO RUBIO JARDIELA ADAMIR",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/12/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/01/2026"
       }
     ],
     "NUMPLA": 23355,
     "TIPONOM": "CC",
     "PROYECTO": "1140020000000000230",
-    "DEPARTAMENTO": "UNIDAD ADMINISTRATIVA DEL INSTITUTO CATASTRAL DEL ESTADO DE OAXACA",
-    "status": 1
+    "DEPARTAMENTO": "DEPARTAMENTO DE RECURSOS MATERIALES",
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -17149,7 +17134,7 @@
         "NOMBRE": "ALTA QNA 23/2023. PROCEDE DE FISCALIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADA 0107 A 31122025 PLAZA D.ADMVA."
+        "MOTIVO_BAJA": "ASIGNADA 0101 A 30062026 PLAZA D.ADMVA."
       }
     ],
     "NUMPLA": 8176,
@@ -18016,10 +18001,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: GARCIA TAPIA AQUILINO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 160,
@@ -18226,17 +18211,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: GARCIA GONZALEZ ROSA MARIA",
+        "NOMBRE": "GARCIA GONZALEZ IRMA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 5497,
-    "TIPONOM": "CN",
+    "TIPONOM": "CC",
     "PROYECTO": "1140031490300000120",
     "DEPARTAMENTO": "DEPARTAMENTO DE REVISIÓN Y ANÁLISIS DEL SECTOR PARAESTATAL",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -18265,7 +18250,7 @@
     "NUMPLA": 5501,
     "TIPONOM": "CN",
     "PROYECTO": "1140041480100000225",
-    "DEPARTAMENTO": "TESORERIA",
+    "DEPARTAMENTO": "DEPARTAMENTO DE MINISTRACIONES MUNICIPALES",
     "status": 1
   },
   {
@@ -18975,10 +18960,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: HERNANDEZ CARRILLO MONICAESTHER",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 5389,
@@ -19260,10 +19245,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: CORDERO MORAN MARIA CECILIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "LIC. POR 1 AÑO A PARTIR DEL 16/08/06"
+        "MOTIVO_BAJA": "RENUNCIA"
       }
     ],
     "NUMPLA": 6084,
@@ -19503,7 +19488,7 @@
         "NOMBRE": "PRORROGA EXIMA 0101 A 30062026",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "PLAZA RECURSOS MATERIALES"
       }
     ],
     "NUMPLA": 6058,
@@ -21074,10 +21059,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: GARCIA NIÑO AARON ISRAEL",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 6478,
@@ -21194,10 +21179,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: CABRERA HERNANDEZ GASPAR",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 3429,
@@ -21703,10 +21688,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: GURRION PINEDA JULIETA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 5902,
@@ -22087,16 +22072,16 @@
     "NUMPLA": 2660,
     "TIPONOM": "B",
     "PROYECTO": "1140041480100000111",
-    "DEPARTAMENTO": "DEPARTAMENTO DE ADMINISTRACIÓN TRIBUTARIA",
+    "DEPARTAMENTO": "CIAC. DE VILLA DE ETLA",
     "status": 1
   },
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: MARTINEZ FIGUEROA ARGELIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 5114,
@@ -22138,10 +22123,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: VASQUEZ VICENTE CATARINA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/01/2026"
       }
     ],
     "NUMPLA": 6480,
@@ -22450,10 +22435,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "LS 16/04/2018 POR TIEMPO INDEFINIDO",
+        "NOMBRE": "CUBRE A: OROZCO IBARRA JUAN LEOPOLDO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 4843,
@@ -22465,7 +22450,7 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "DEPTO.DE REC. MAT. MEMORANDUM 2975/2025",
         "FECHA": null,
         "FECHA_BAJA": null,
         "MOTIVO_BAJA": " "
@@ -22474,7 +22459,7 @@
     "NUMPLA": 15308,
     "TIPONOM": "B",
     "PROYECTO": "1140020000000000230",
-    "DEPARTAMENTO": "DIRECCIÓN ADMINISTRATIVA",
+    "DEPARTAMENTO": "DEPARTAMENTO DE RECURSOS MATERIALES",
     "status": 1
   },
   {
@@ -23420,7 +23405,7 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "ASIGNADO DEL 0107 A 31122025",
+        "NOMBRE": "ASIGNADO DEL 0101 A 30062026",
         "FECHA": null,
         "FECHA_BAJA": null,
         "MOTIVO_BAJA": " "
@@ -24376,10 +24361,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: CORDERO CORDERO LAURA PATRICIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 6045,
@@ -25426,10 +25411,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: PACHECO PEREZ ELIZABETH",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 7636,
@@ -25531,10 +25516,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: VASQUEZ CERNA ENRRIQUE EMIGDIO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/01/2026"
       }
     ],
     "NUMPLA": 4790,
@@ -25546,10 +25531,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: MEDINA ALVAREZ LUIS HUMBERTO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/01/2026"
       }
     ],
     "NUMPLA": 5990,
@@ -26025,10 +26010,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "  ",
+        "NOMBRE": "CUBRE A: PEREZ LOPEZ ELIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 11727,
@@ -26055,7 +26040,7 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "ALTA 14062017",
+        "NOMBRE": "ALTA 14062017  T/A 2009",
         "FECHA": null,
         "FECHA_BAJA": null,
         "MOTIVO_BAJA": " "
@@ -26145,16 +26130,16 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "MODULO STA. CRUZ AMILPAS",
+        "NOMBRE": "CUBRE A: CORTES AGUILAR AIDA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "JUBILACION 31/12/2025"
       }
     ],
     "NUMPLA": 9925,
     "TIPONOM": "B",
     "PROYECTO": "1140020000000000250",
-    "DEPARTAMENTO": "CENTRO INTEGRAL DE ATENCIÓN AL CONTRIBUYENTE DE SANTA CRUZ AMILPAS",
+    "DEPARTAMENTO": "DEPARTAMENTO DE RECURSOS FINANCIEROS",
     "status": 1
   },
   {
@@ -26553,7 +26538,7 @@
         "NOMBRE": "PLAZA DIRECCION ADMINISTRATIVA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "ASIGNADA 0107 A 31122025"
+        "MOTIVO_BAJA": "ASIGNADA 0101 A 30062026"
       }
     ],
     "NUMPLA": 5391,
@@ -26640,17 +26625,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: TORRES CRUZ JUAN MARTIN",
+        "NOMBRE": "MARTINEZ CRUZ EUGENIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "JUBILACION 31/12/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 5502,
     "TIPONOM": "CC",
     "PROYECTO": "1140031490300000120",
     "DEPARTAMENTO": "DIRECCIÓN DE CONTABILIDAD GUBERNAMENTAL",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -27989,17 +27974,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA DE NUEVA CREACION MARZO 2025",
+        "NOMBRE": "RAMIREZ GONZALEZ EDGAR FRANCISCO",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 25117,
     "TIPONOM": "MM",
     "PROYECTO": "1140061170300000100",
     "DEPARTAMENTO": "UNIDAD DE DELEGACIONES CATASTRALES",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -28199,17 +28184,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA DE NUEVA CREACION MARZO 2025",
+        "NOMBRE": "GOMEZ MARTINEZ LORENA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "RENUNCIA 31/01/2026"
       }
     ],
     "NUMPLA": 25133,
     "TIPONOM": "MM",
     "PROYECTO": "1140061170300000100",
     "DEPARTAMENTO": "UNIDAD DE DELEGACIONES CATASTRALES",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -29384,17 +29369,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: SULIK CORTES ZIBIA SINAI",
+        "NOMBRE": "CASAS PABLO MIGUEL ANGEL",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/01/2021"
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 11612,
     "TIPONOM": "MM",
     "PROYECTO": "1140061170300000102",
     "DEPARTAMENTO": "DEPARTAMENTO DE VALORES UNITARIOS",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -29789,17 +29774,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: ALBUERNE CANTERO VERONICA",
+        "NOMBRE": "JIMENEZ MERINO VICTORIA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 31/01/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/01/2026"
       }
     ],
     "NUMPLA": 7070,
     "TIPONOM": "MM",
     "PROYECTO": "114004148010000010O",
     "DEPARTAMENTO": "CIAC. DE MATÍAS ROMERO AVENDAÑO",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -29864,17 +29849,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: AMAYA IBARRA AZALEA",
+        "NOMBRE": "LOPEZ AVENDAÑO MEZTLI BIANCA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 30/06/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 7079,
     "TIPONOM": "MM",
     "PROYECTO": "114004148010000010Q",
     "DEPARTAMENTO": "CIAC. DE ASUNCIÓN NOCHIXTLÁN",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -29909,10 +29894,10 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: REYES MENDOZA ERICK EDUARDO",
+        "NOMBRE": "MARCELIANO GONZALEZ MARICRUZ BETZAIDA",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 30/04/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/01/2026"
       }
     ],
     "NUMPLA": 7091,
@@ -30464,17 +30449,17 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "CUBRE A: GUTIERREZ ANTONIO RAMIRO",
+        "NOMBRE": "MUÑOZ AVENDAÑO LUIS ANDRES",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": "RENUNCIA 15/01/2023"
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 11631,
     "TIPONOM": "MM",
     "PROYECTO": "1140061170300000101",
     "DEPARTAMENTO": "UNIDAD DE DELEGACIONES CATASTRALES",
-    "status": 1
+    "status": 2
   },
   {
     "previousOcuppants": [
@@ -30914,16 +30899,31 @@
   {
     "previousOcuppants": [
       {
-        "NOMBRE": "PLAZA DE NUEVA CREACION MARZO 2025",
+        "NOMBRE": "SANCHEZ VENTURA ADRIAN",
         "FECHA": null,
         "FECHA_BAJA": null,
-        "MOTIVO_BAJA": " "
+        "MOTIVO_BAJA": "RENUNCIA 31/12/2025"
       }
     ],
     "NUMPLA": 25120,
     "TIPONOM": "MM",
     "PROYECTO": "1140061170300000100",
     "DEPARTAMENTO": "UNIDAD DE DELEGACIONES CATASTRALES",
+    "status": 2
+  },
+  {
+    "previousOcuppants": [
+      {
+        "NOMBRE": "CUBRE LS DE GONZALEZ MENDOZA NANCYKARINA",
+        "FECHA": null,
+        "FECHA_BAJA": null,
+        "MOTIVO_BAJA": "POR TIEMPO INDEFINIDO"
+      }
+    ],
+    "NUMPLA": 20157,
+    "TIPONOM": "B",
+    "PROYECTO": "1140010000000000100",
+    "DEPARTAMENTO": "OFICINA DEL SECRETARIO",
     "status": 1
   }
 ]

@@ -1,0 +1,1064 @@
+[
+  {
+    "_id": {
+      "$oid": "699f312ddec1371bec665cd7"
+    },
+    "id_empoyee": "697276770359839a1768bbf2",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-18",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0415/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176897ff"
+    },
+    "AÑO": 2026,
+    "RFC": "MAHJ0401265X8"
+  },
+  {
+    "_id": {
+      "$oid": "699f6930dec1371bec666ae7"
+    },
+    "id_empoyee": "697276770359839a1768c0f2",
+    "TIPO": "CUMA",
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0423/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b0ff"
+    },
+    "AÑO": 2026,
+    "RFC": "AOVM9410206Y1"
+  },
+  {
+    "_id": {
+      "$oid": "699f69a3dec1371bec666afa"
+    },
+    "id_empoyee": "697276770359839a1768c041",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-19",
+    "NUM_DIAS": 3,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0424/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad8a"
+    },
+    "AÑO": 2026,
+    "RFC": "MAHH790921EU8"
+  },
+  {
+    "_id": {
+      "$oid": "699f6a7cdec1371bec666b13"
+    },
+    "id_empoyee": "697276770359839a1768bd5a",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0425/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f07"
+    },
+    "AÑO": 2026,
+    "RFC": "NIHM8803042A4"
+  },
+  {
+    "_id": {
+      "$oid": "699f6aafdec1371bec666b24"
+    },
+    "id_empoyee": "697276770359839a1768bcf1",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0426/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689cfa"
+    },
+    "AÑO": 2026,
+    "RFC": "HEFI88012115A"
+  },
+  {
+    "_id": {
+      "$oid": "699f6b3fdec1371bec666b58"
+    },
+    "id_empoyee": "697276770359839a1768bc12",
+    "TIPO": "CUFA",
+    "DESDE": "2026-02-24",
+    "HASTA": "2026-02-27",
+    "NUM_DIAS": 4,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0427/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768989f"
+    },
+    "AÑO": 2026,
+    "RFC": "REOS970202JGA"
+  },
+  {
+    "_id": {
+      "$oid": "699f6b6bdec1371bec666b73"
+    },
+    "id_empoyee": "697276770359839a1768bbbe",
+    "TIPO": "CUFA",
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-27",
+    "NUM_DIAS": 8,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0428/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176896fb"
+    },
+    "AÑO": 2026,
+    "RFC": "VEOT840719FJ1"
+  },
+  {
+    "_id": {
+      "$oid": "699f6baddec1371bec666b90"
+    },
+    "id_empoyee": "697276770359839a1768c102",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-16",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0429/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b14f"
+    },
+    "AÑO": 2026,
+    "RFC": "AAMA6103193G5"
+  },
+  {
+    "_id": {
+      "$oid": "699f6bc8dec1371bec666ba6"
+    },
+    "id_empoyee": "697276770359839a1768c102",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-23",
+    "HASTA": "2026-02-27",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0430/2026",
+    "OFICIO_AUTORIZACION": "",
+    "OBSERVACIONES": "",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b14f"
+    },
+    "AÑO": 2026,
+    "RFC": "AAMA6103193G5"
+  },
+  {
+    "_id": {
+      "$oid": "69a07fa2dec1371bec667055"
+    },
+    "id_empoyee": "697276770359839a1768be0a",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-05",
+    "HASTA": "2026-01-06",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0051/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0448/2026",
+    "OBSERVACIONES": "AUTORIZADO EL 15 DE ENERO DEL ACTUAL",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a277"
+    },
+    "AÑO": 2026,
+    "RFC": "MOLY851223RP7"
+  },
+  {
+    "_id": {
+      "$oid": "69a081fbdec1371bec66724a"
+    },
+    "id_empoyee": "697276770359839a1768bc91",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-07",
+    "HASTA": "2026-01-07",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0061/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0482/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 14 DE ENERO DEL ACTUAL",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689b1a"
+    },
+    "AÑO": 2026,
+    "RFC": "OOBK960125UH5"
+  },
+  {
+    "_id": {
+      "$oid": "69a08322dec1371bec667323"
+    },
+    "id_empoyee": "697276770359839a1768bc1a",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-08",
+    "HASTA": "2026-01-09",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0062/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0482/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 14 DE ENERO DEL ACTUAL",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176898c7"
+    },
+    "AÑO": 2026,
+    "RFC": "AEBA810708J15"
+  },
+  {
+    "_id": {
+      "$oid": "69a083b8dec1371bec6673d0"
+    },
+    "id_empoyee": "697276770359839a1768bb46",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-08",
+    "HASTA": "2026-01-09",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0063/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0482/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 14 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894a3"
+    },
+    "AÑO": 2026,
+    "RFC": "AAJJ860212L36"
+  },
+  {
+    "_id": {
+      "$oid": "69a08598dec1371bec667600"
+    },
+    "id_empoyee": "697276770359839a1768c01e",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-12",
+    "HASTA": "2026-01-16",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0071/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0594/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 20 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768acdb"
+    },
+    "AÑO": 2026,
+    "RFC": "LOGP831103DE2"
+  },
+  {
+    "_id": {
+      "$oid": "69a0874cdec1371bec6677a5"
+    },
+    "id_empoyee": "697276770359839a1768bc1a",
+    "TIPO": "CUMA",
+    "DESDE": "2026-01-13",
+    "HASTA": "2026-01-13",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0074/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0594/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 20 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176898c7"
+    },
+    "AÑO": 2026,
+    "RFC": "AEBA810708J15"
+  },
+  {
+    "_id": {
+      "$oid": "69a08806dec1371bec667852"
+    },
+    "id_empoyee": "697276770359839a1768bb54",
+    "TIPO": "CUMA",
+    "DESDE": "2026-01-13",
+    "HASTA": "2026-01-14",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0075/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0594/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 20 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894e9"
+    },
+    "AÑO": 2026,
+    "RFC": "GAMN840813CJ2"
+  },
+  {
+    "_id": {
+      "$oid": "69a09139dec1371bec66840e"
+    },
+    "id_empoyee": "697276770359839a1768beb5",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-12",
+    "HASTA": "2026-01-21",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0076/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0594/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 20 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a5ce"
+    },
+    "AÑO": 2026,
+    "RFC": "REOR680809SG0"
+  },
+  {
+    "_id": {
+      "$oid": "69a0920edec1371bec668514"
+    },
+    "id_empoyee": "697276770359839a1768c03c",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-14",
+    "HASTA": "2026-01-14",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0115/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad71"
+    },
+    "AÑO": 2026,
+    "RFC": "JIVJ7501023A4"
+  },
+  {
+    "_id": {
+      "$oid": "69a0938bdec1371bec6686e3"
+    },
+    "id_empoyee": "697276770359839a1768c146",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-14",
+    "HASTA": "2026-01-14",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0116/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2a3"
+    },
+    "AÑO": 2026,
+    "RFC": "CAGX690824GX3"
+  },
+  {
+    "_id": {
+      "$oid": "69a0945fdec1371bec6687c6"
+    },
+    "id_empoyee": "697276770359839a1768bb5c",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-09",
+    "HASTA": "2026-01-09",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0125/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689511"
+    },
+    "AÑO": 2026,
+    "RFC": "DIGD930218VD1"
+  },
+  {
+    "_id": {
+      "$oid": "69a094f5dec1371bec66889b"
+    },
+    "id_empoyee": "697276770359839a1768c117",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-14",
+    "HASTA": "2026-01-23",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0126/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b1b8"
+    },
+    "AÑO": 2026,
+    "RFC": "COHN741224KU9"
+  },
+  {
+    "_id": {
+      "$oid": "69a09594dec1371bec6689a4"
+    },
+    "id_empoyee": "697276770359839a1768bf4d",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-14",
+    "HASTA": "2026-01-14",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0127/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a8c6"
+    },
+    "AÑO": 2026,
+    "RFC": "GACJ611124DJ8"
+  },
+  {
+    "_id": {
+      "$oid": "69a096eddec1371bec668b6b"
+    },
+    "id_empoyee": "697276770359839a1768be21",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-12",
+    "HASTA": "2026-01-12",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0129/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a2ea"
+    },
+    "AÑO": 2026,
+    "RFC": "HIMD910523HQ1"
+  },
+  {
+    "_id": {
+      "$oid": "69a0975edec1371bec668c05"
+    },
+    "id_empoyee": "697276770359839a1768c0ce",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-15",
+    "HASTA": "2026-01-16",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0137/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0724/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 22 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b04b"
+    },
+    "AÑO": 2026,
+    "RFC": "GORN7706256W5"
+  },
+  {
+    "_id": {
+      "$oid": "69a098a5dec1371bec668d86"
+    },
+    "id_empoyee": "697276770359839a1768c009",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-19",
+    "HASTA": "2026-01-25",
+    "NUM_DIAS": 7,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0155/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0860/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 29 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ac72"
+    },
+    "AÑO": 2026,
+    "RFC": "CAHR950509EA9"
+  },
+  {
+    "_id": {
+      "$oid": "69a09932dec1371bec668e36"
+    },
+    "id_empoyee": "697276770359839a1768bd67",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-19",
+    "HASTA": "2026-01-20",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0158/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0799/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 27 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f48"
+    },
+    "AÑO": 2026,
+    "RFC": "RAMM900815PD6"
+  },
+  {
+    "_id": {
+      "$oid": "69a099d8dec1371bec668f43"
+    },
+    "id_empoyee": "697276770359839a1768bb57",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-19",
+    "HASTA": "2026-01-20",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0159/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0799/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 27 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f8"
+    },
+    "AÑO": 2026,
+    "RFC": "HEPD920706H55"
+  },
+  {
+    "_id": {
+      "$oid": "69a09a60dec1371bec669007"
+    },
+    "id_empoyee": "697276770359839a1768c0f2",
+    "TIPO": "CUMA",
+    "DESDE": "2026-01-19",
+    "HASTA": "2026-01-20",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0160/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0799/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 27 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b0ff"
+    },
+    "AÑO": 2026,
+    "RFC": "AOVM9410206Y1"
+  },
+  {
+    "_id": {
+      "$oid": "69a09e65dec1371bec6693df"
+    },
+    "id_empoyee": "697276770359839a1768c0f2",
+    "TIPO": "CUMA",
+    "DESDE": "2026-01-21",
+    "HASTA": "2026-01-22",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0172/2026",
+    "OFICIO_AUTORIZACION": "SF/SUBDCGPRH/DRH/USP/DRP/0839/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 28 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b0ff"
+    },
+    "AÑO": 2026,
+    "RFC": "AOVM9410206Y1"
+  },
+  {
+    "_id": {
+      "$oid": "69a09f40dec1371bec66955c"
+    },
+    "id_empoyee": "697276770359839a1768bbba",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-21",
+    "HASTA": "2026-01-21",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0173/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0839/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 28 DE ENERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176896e7"
+    },
+    "AÑO": 2026,
+    "RFC": "VAML9805275X3"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a1bddec1371bec669917"
+    },
+    "id_empoyee": "697276770359839a1768c10b",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-19",
+    "HASTA": "2026-01-20",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0194/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b17c"
+    },
+    "AÑO": 2026,
+    "RFC": "PESE720221FL9"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a531dec1371bec669c94"
+    },
+    "id_empoyee": "697276770359839a1768bb5f",
+    "TIPO": "CUMA",
+    "DESDE": "2026-01-22",
+    "HASTA": "2026-01-23",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0195/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689520"
+    },
+    "AÑO": 2026,
+    "RFC": "MAGI000710FX2"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a67edec1371bec669e44"
+    },
+    "id_empoyee": "697276770359839a1768bc87",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-21",
+    "HASTA": "2026-01-22",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0196/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689ae8"
+    },
+    "AÑO": 2026,
+    "RFC": "CABJ9104134G9"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a70fdec1371bec669f56"
+    },
+    "id_empoyee": "697276770359839a1768be26",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-22",
+    "HASTA": "2026-01-22",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0197/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a303"
+    },
+    "AÑO": 2026,
+    "RFC": "LECI841017AN6"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a7a9dec1371bec66a05c"
+    },
+    "id_empoyee": "697276770359839a1768beb5",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-22",
+    "HASTA": "2026-01-27",
+    "NUM_DIAS": 6,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0198/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a5ce"
+    },
+    "AÑO": 2026,
+    "RFC": "REOR680809SG0"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a813dec1371bec66a11b"
+    },
+    "id_empoyee": "697276770359839a1768bfff",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-01-30",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0199/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ac40"
+    },
+    "AÑO": 2026,
+    "RFC": "SAEF8011051G5"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a88cdec1371bec66a1dc"
+    },
+    "id_empoyee": "697276770359839a1768bdb0",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-23",
+    "HASTA": "2026-01-24",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0200/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a0b5"
+    },
+    "AÑO": 2026,
+    "RFC": "FUAN930427RD4"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a8f0dec1371bec66a25a"
+    },
+    "id_empoyee": "697276770359839a1768bdb0",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-20",
+    "HASTA": "2026-01-23",
+    "NUM_DIAS": 4,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0201/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0879/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 3 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a0b5"
+    },
+    "AÑO": 2026,
+    "RFC": "FUAN930427RD4"
+  },
+  {
+    "_id": {
+      "$oid": "69a0a96edec1371bec66a2f1"
+    },
+    "id_empoyee": "697276770359839a1768c01d",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-28",
+    "HASTA": "2026-01-29",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0220/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768acd6"
+    },
+    "AÑO": 2026,
+    "RFC": "FEGC880131QXA"
+  },
+  {
+    "_id": {
+      "$oid": "69a0aa0cdec1371bec66a3a6"
+    },
+    "id_empoyee": "697276770359839a1768bcf1",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-27",
+    "HASTA": "2026-01-28",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0221/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689cfa"
+    },
+    "AÑO": 2026,
+    "RFC": "HEFI88012115A"
+  },
+  {
+    "_id": {
+      "$oid": "69a0b8ccdec1371bec66aff5"
+    },
+    "id_empoyee": "697276770359839a1768bb38",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-01-28",
+    "NUM_DIAS": 3,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0222/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRU/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768945d"
+    },
+    "AÑO": 2026,
+    "RFC": "HEMI0210275U8"
+  },
+  {
+    "_id": {
+      "$oid": "69a0b95cdec1371bec66b06e"
+    },
+    "id_empoyee": "697276770359839a1768bbea",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-27",
+    "HASTA": "2026-01-28",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0223/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRU/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176897d7"
+    },
+    "AÑO": 2026,
+    "RFC": "MAGR950904E56"
+  },
+  {
+    "_id": {
+      "$oid": "69a0ba4edec1371bec66b13d"
+    },
+    "id_empoyee": "697276770359839a1768c14a",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-27",
+    "HASTA": "2026-01-28",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0224/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2b7"
+    },
+    "AÑO": 2026,
+    "RFC": "EIHC670907IS3"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bac3dec1371bec66b1a6"
+    },
+    "id_empoyee": "697276770359839a1768c117",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-24",
+    "HASTA": "2026-02-02",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0225/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b1b8"
+    },
+    "AÑO": 2026,
+    "RFC": "COHN741224KU9"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bb3edec1371bec66b219"
+    },
+    "id_empoyee": "697276770359839a1768c16c",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-01-30",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0261/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b361"
+    },
+    "AÑO": 2026,
+    "RFC": "LOIG780526J5A"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bc41dec1371bec66b30d"
+    },
+    "id_empoyee": "697276770359839a1768bdc8",
+    "TIPO": "CUFA",
+    "DESDE": "2026-01-31",
+    "HASTA": "2026-02-09",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0262/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a12d"
+    },
+    "AÑO": 2026,
+    "RFC": "SALB8407113I7"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bca0dec1371bec66b372"
+    },
+    "id_empoyee": "697276770359839a1768bdc7",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-01-30",
+    "NUM_DIAS": 5,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0263/2026",
+    "OFICIO_AUTORIZACION": "SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a128"
+    },
+    "AÑO": 2026,
+    "RFC": "VECI970311QA5"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bd18dec1371bec66b3ed"
+    },
+    "id_empoyee": "697276770359839a1768c01e",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-20",
+    "HASTA": "2026-01-29",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0264/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768acdb"
+    },
+    "AÑO": 2026,
+    "RFC": "LOGP831103DE2"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bd6edec1371bec66b449"
+    },
+    "id_empoyee": "697276770359839a1768c01e",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-30",
+    "HASTA": "2026-02-08",
+    "NUM_DIAS": 10,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0276/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/0988/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 11 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768acdb"
+    },
+    "AÑO": 2026,
+    "RFC": "LOGP831103DE2"
+  },
+  {
+    "_id": {
+      "$oid": "69a0be57dec1371bec66b51e"
+    },
+    "id_empoyee": "697276770359839a1768bc02",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-04",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 3,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0301/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768984f"
+    },
+    "AÑO": 2026,
+    "RFC": "SIME970124M94"
+  },
+  {
+    "_id": {
+      "$oid": "69a0bfabdec1371bec66b651"
+    },
+    "id_empoyee": "697276770359839a1768bcfe",
+    "TIPO": "CUMA",
+    "DESDE": "2026-02-03",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 4,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0302/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689d3b"
+    },
+    "AÑO": 2026,
+    "RFC": "GOCY990918AG2"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c00cdec1371bec66b6be"
+    },
+    "id_empoyee": "697276770359839a1768c040",
+    "TIPO": "CUMA",
+    "DESDE": "2026-02-05",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0303/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad85"
+    },
+    "AÑO": 2026,
+    "RFC": "REGA880501AK8"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c0fedec1371bec66b7b0"
+    },
+    "id_empoyee": "697276770359839a1768c117",
+    "TIPO": "CUFA",
+    "DESDE": "2026-02-03",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 4,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0310/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b1b8"
+    },
+    "AÑO": 2026,
+    "RFC": "COHN741224KU9"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c196dec1371bec66b851"
+    },
+    "id_empoyee": "697276770359839a1768bf5e",
+    "TIPO": "CUFA",
+    "DESDE": "2026-02-03",
+    "HASTA": "2026-02-03",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0311/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a91b"
+    },
+    "AÑO": 2026,
+    "RFC": "AORC950425G83"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c207dec1371bec66b8d0"
+    },
+    "id_empoyee": "697276770359839a1768bd39",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-27",
+    "HASTA": "2026-01-30",
+    "NUM_DIAS": 4,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0315/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e62"
+    },
+    "AÑO": 2026,
+    "RFC": "GARI950521RE7"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c2b4dec1371bec66b985"
+    },
+    "id_empoyee": "697276770359839a1768bb6e",
+    "TIPO": "LENP",
+    "DESDE": "2026-01-27",
+    "HASTA": "2026-01-29",
+    "NUM_DIAS": 3,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0316/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768956b"
+    },
+    "AÑO": 2026,
+    "RFC": "GARP000124SVA"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c317dec1371bec66ba00"
+    },
+    "id_empoyee": "697276770359839a1768bc70",
+    "TIPO": "CUFA",
+    "DESDE": "2026-02-09",
+    "HASTA": "2026-02-09",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0317/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1020/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 13 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689a75"
+    },
+    "AÑO": 2026,
+    "RFC": "RUFN760501R20"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c41edec1371bec66bb0a"
+    },
+    "id_empoyee": "697276770359839a1768bcc1",
+    "TIPO": "CUMA",
+    "DESDE": "2026-02-06",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 1,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0321/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1030/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 16 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689c0a"
+    },
+    "AÑO": 2026,
+    "RFC": "AACS890926NA8"
+  },
+  {
+    "_id": {
+      "$oid": "69a0c4dfdec1371bec66bbda"
+    },
+    "id_empoyee": "697276770359839a1768bb39",
+    "TIPO": "LENP",
+    "DESDE": "2026-02-10",
+    "HASTA": "2026-02-11",
+    "NUM_DIAS": 2,
+    "OFICIO_SOLICITUD": "SF/DA/RH/0322/2026",
+    "OFICIO_AUTORIZACION": "SA/SUBDCGPRH/DRH/USP/DRP/1030/2026",
+    "OBSERVACIONES": "AUTORIZACIÓN DE FECHA 16 DE FEBRERO DEL ACTUAL.",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689462"
+    },
+    "AÑO": 2026,
+    "RFC": "MAAA021216S46"
+  }
+]

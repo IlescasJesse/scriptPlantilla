@@ -2,14 +2,11 @@ const { MongoClient } = require("mongodb");
 const Excel = require("exceljs");
 const fs = require("fs");
 const { ObjectId } = require("mongodb");
-const { actualizarPlantillaDesdeMongo } = require("./comisionados");
+const { actualizarPlantillaDesdeMongo } = require("./COMISIONES/comisionados");
 const {
   procesarPlantillatipoNOM,
   actualizarTiponomEnPlazas,
 } = require("./tiponomina");
-const { setProyect } = require("./setProyect");
-const { exec } = require("child_process");
-const { json } = require("stream/consumers");
 // const uri = "mongodb://mongoadmin:pb9*V82nY3An@172.17.90.58:3001";
 const uri = "mongodb://admin:1234@localhost:27017/";
 const client = new MongoClient(uri);
@@ -18,7 +15,7 @@ async function run() {
   try {
     console.log("Connecting to MongoDB...");
     await client.connect();
-    const database = client.db("sirhTest");
+    const database = client.db("SIRH2026");
     const collectionsToDelete = [
       "BAJAS",
       "BITACORA",
@@ -64,122 +61,63 @@ async function run() {
     const collectionBitacora = database.collection("BITACORA");
 
     // LEEMOS LA PLANTILLA
-    console.log("Reading plantilla_test.xlsx...");
+    console.log("Reading plantilla_2026_test.xlsx...");
     const workbookPlantilla = new Excel.Workbook();
     await workbookPlantilla.xlsx.readFile("plantilla_2026_test.xlsx");
     const worksheetPlantilla = workbookPlantilla.getWorksheet(1);
     const headersPlantilla = worksheetPlantilla.getRow(1).values.slice(1);
 
-    // LEEMOS COMISIONADOS
-    console.log("Reading COMISIONADOS_SINDICALES.xlsx...");
-    const workbookVacacionesConf = new Excel.Workbook();
-    await workbookVacacionesConf.xlsx.readFile("VACACIONES_CONFIANZA.xlsx");
-    const worksheetVacacionesConf =
-      workbookVacacionesConf.getWorksheet("vacaciones");
-
+    // LEEMOS VACACIONES_BASE
+    console.log("Reading VACACIONES_BASE.xlsx...");
     const workbookVacacionesBase = new Excel.Workbook();
-    await workbookVacacionesBase.xlsx.readFile("VACACIONES_BASE.xlsx");
-    const worksheetVacacionesBase =
-      workbookVacacionesBase.getWorksheet("vacaciones");
+    await workbookVacacionesBase.xlsx.readFile("VACACIONES/VACACIONES_BASE.xlsx");
+    const worksheetVacacionesBase = workbookVacacionesBase.getWorksheet("vacaciones");
 
-    const workbookComisionados = new Excel.Workbook();
-    await workbookComisionados.xlsx.readFile("COMISIONADOS_SINDICALES.xlsx");
-    const worksheetComisionados =
-      workbookComisionados.getWorksheet("comisionados");
+    // LEEMOS VACACIONES_CONFIANZA
+    console.log("Reading VACACIONES_CONFIANZA.xlsx...");
+    const workbookVacacionesConf = new Excel.Workbook();
+    await workbookVacacionesConf.xlsx.readFile("VACACIONES/VACACIONES_CONFIANZA.xlsx");
+    const worksheetVacacionesConf = workbookVacacionesConf.getWorksheet("vacaciones");
 
-    console.log("Extracting names from COMISIONADOS_SINDICALES.xlsx...");
+    // LEEMOS TARJETAS – un único archivo con RFC/NUMTARJETA (y área, etc.)
+    console.log("Reading TARJETAS.xlsx...");
+    const tarjetasData = [];
+    const workbookTarjetas = new Excel.Workbook();
+    await workbookTarjetas.xlsx.readFile("NUMEROS_TARJETAS/TARJETAS.xlsx");
+    workbookTarjetas.eachSheet((worksheet) => {
+      let rfcIdx = null,
+        numIdx = null,
+        horM = null,
+        horV = null,
+        areaIdx = null;
 
-    console.log("Names extracted from COMISIONADOS_SINDICALES.xlsx.");
+      worksheet.getRow(1).eachCell((cell, col) => {
+        const h = (cell.text || cell.value || "").toString().toUpperCase();
+        if (h.includes("RFC")) rfcIdx = col;
+        if (h.includes("NUMTARJETA")) numIdx = col;
+        if (h.includes("TURNOMAT")) horM = col;
+        if (h.includes("TURNOVES")) horV = col;
+        if (h.includes("AREA_RESP")) areaIdx = col;
+      });
+      if (!rfcIdx || !numIdx) return;
 
-    // LEEMOS TARJETAS
-    console.log("Reading TARJETAS_CENTRAL.xlsx...");
-    const workbookTarjetasCentral = new Excel.Workbook();
-    await workbookTarjetasCentral.xlsx.readFile("TARJETAS_CENTRAL.xlsx");
-
-    const tarjetasDataCentral = [];
-    workbookTarjetasCentral.eachSheet((worksheet) => {
-      const nombreIndex = 3; // Columna "NOMBRE"
-      const numIndex = 1; // Columna "NUM"
-
-      // Procesar las filas
       worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
-        if (rowNumber === 1) return; // Saltar encabezados
-        const nombre = row.getCell(nombreIndex).value;
-        const numTarjeta = row.getCell(numIndex).value;
-        if (nombre && numTarjeta) {
-          tarjetasDataCentral.push({
-            nombre: nombre
-              .trim()
-              .replace(/\s{2,}/g, " ")
-              .replace(/\.$/, "")
-              .toUpperCase(),
-            numTarjeta: numTarjeta,
-            horario: row.getCell(5).value,
-          });
-        }
+        if (rowNumber === 1) return;
+        const rawRfc = row.getCell(rfcIdx).value;
+        const numTarjeta = row.getCell(numIdx).value;
+        if (!rawRfc || !numTarjeta) return;
+        tarjetasData.push({
+          rfc: rawRfc.toString().trim().toUpperCase(),
+          numTarjeta,
+          horarioM: horM ? row.getCell(horM).value : undefined,
+          horarioV: horV ? row.getCell(horV).value : undefined,
+          area: areaIdx ? row.getCell(areaIdx).value : undefined,
+        });
       });
     });
 
-    // LEEMOS TARJETAS PLANEACIÓN
-    console.log("Reading TARJETAS_PLANEACION.xlsx...");
-    const workbookTarjetasPlaneacion = new Excel.Workbook();
-    await workbookTarjetasPlaneacion.xlsx.readFile("TARJETAS_PLANEACION.xlsx");
-
-    const tarjetasDataPlaneacion = [];
-    workbookTarjetasPlaneacion.eachSheet((worksheet) => {
-      const nombreIndex = 2; // Columna "NOMBRE"
-      const numIndex = 1; // Columna "NUM"
-
-      // Procesar las filas
-      worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
-        if (rowNumber === 1) return; // Saltar encabezados
-        const nombre = row.getCell(nombreIndex).value;
-        const numTarjeta = row.getCell(numIndex).value;
-        if (nombre && numTarjeta) {
-          tarjetasDataPlaneacion.push({
-            nombre: nombre
-              .trim()
-              .replace(/\s{2,}/g, " ")
-              .replace(/\.$/, "")
-              .toUpperCase(),
-            numTarjeta: numTarjeta,
-            horario: row.getCell(5).value,
-          });
-        }
-      });
-    });
-
-    // LEEMOS TARJETAS PLANEACIÓN
-    console.log("Reading TARJETAS_AUDITORIA.xlsx...");
-    const workbookTarjetasAuditoria = new Excel.Workbook();
-    await workbookTarjetasAuditoria.xlsx.readFile("TARJETAS_AUDITORIA.xlsx");
-
-    const tarjetasDataAuditoria = [];
-    workbookTarjetasAuditoria.eachSheet((worksheet) => {
-      const nombreIndex = 2; // Columna "NOMBRE"
-      const numIndex = 1; // Columna "NUM"
-
-      // Procesar las filas
-      worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
-        if (rowNumber === 1) return; // Saltar encabezados
-        const nombre = row.getCell(nombreIndex).value;
-        const numTarjeta = row.getCell(numIndex).value;
-        if (nombre && typeof nombre === "string" && numTarjeta) {
-          tarjetasDataAuditoria.push({
-            nombre: nombre
-              .trim()
-              .replace(/\s{2,}/g, " ")
-              .replace(/\.$/, "")
-              .toUpperCase(),
-            numTarjeta: numTarjeta,
-            horario: row.getCell(5).value,
-          });
-        }
-      });
-    });
-
-    console.log("Processing rows from plantilla_2026_test.xlsx...");
-    const jsonArray = [];
+    console.log("Processing rows from plantilla_2026_test.xls...");
+    let jsonArray = [];
     const licenciaArray = [];
 
     worksheetPlantilla.eachRow({ includeEmpty: true }, (row, rowNumber) => {
@@ -230,13 +168,10 @@ async function run() {
         const [day, month, year] = jsonObject["FECHA_INGRESO"].split("/");
         jsonObject["FECHA_INGRESO"] = `${year}/${month}/${day}`;
       }
-      const profesion2 =
-        jsonObject["PROFESION2"] === null ? " " : jsonObject["PROFESION2"];
-      const profesion1 =
-        jsonObject["PROFESION"] === null ? " " : jsonObject["PROFESION"];
+      const profesion2 = jsonObject["PROFESION2"] ?? " ";
+      const profesion1 = jsonObject["PROFESION"] ?? " ";
       const profesion = `${profesion1} ${profesion2}`;
-
-      jsonObject["PROFES"] = profesion === "   " ? null : profesion;
+      jsonObject["PROFES"] = profesion.trim() === "" ? null : profesion.trim();
 
       // Remove everything after "." in TURNOMAT
       if (
@@ -277,35 +212,23 @@ async function run() {
         jsonObject["APE_MAT"] = nombreParts[1] || null;
         jsonObject["NOMBRES"] = nombreParts.slice(2).join(" ") || null;
 
-        // Normalizar el nombre del empleado para comparación
-        const normalizedNombre = jsonObject["NOMBRE"]
-          .trim()
-          .replace(/\s{2,}/g, " ")
-          .replace(/\.$/, "")
-          .toUpperCase();
-
-        // Compare with TARJETAS_CENTRAL.xlsx
-        const tarjetaMatch = tarjetasDataCentral.find(
-          (tarjeta) => tarjeta.nombre === normalizedNombre
-        );
-        jsonObject["NUMTARJETA"] = tarjetaMatch
-          ? tarjetaMatch.numTarjeta
+        // Actualizar el campo NUMTARJETA buscando por RFC en el archivo de tarjetas
+        const normalizedRfc = jsonObject["RFC"]
+          ? jsonObject["RFC"].toString().trim().toUpperCase()
           : null;
-
-        // Compare with TARJETAS_PLANEACION.xlsx (sobrescribe si coincide)
-        const tarjetaPlanMatch = tarjetasDataPlaneacion.find(
-          (tarjeta) => tarjeta.nombre === normalizedNombre
-        );
-        if (tarjetaPlanMatch) {
-          jsonObject["NUMTARJETA"] = tarjetaPlanMatch.numTarjeta;
-        }
-
-        // Compare with TARJETAS_AUDITORIA.xlsx (sobrescribe si coincide)
-        const tarjetaAudMatch = tarjetasDataAuditoria.find(
-          (tarjeta) => tarjeta.nombre === normalizedNombre
-        );
-        if (tarjetaAudMatch) {
-          jsonObject["NUMTARJETA"] = tarjetaAudMatch.numTarjeta;
+        if (normalizedRfc) {
+          const tarjetaMatch = tarjetasData.find((t) => t.rfc === normalizedRfc);
+          if (tarjetaMatch) {
+            jsonObject["NUMTARJETA"] = tarjetaMatch.numTarjeta;
+            if (tarjetaMatch.horarioM !== undefined)
+              jsonObject["TURNOMAT"] = tarjetaMatch.horarioM;
+            if (tarjetaMatch.horarioV !== undefined)
+              jsonObject["TURNOVES"] = tarjetaMatch.horarioV;
+            if (tarjetaMatch.area !== undefined)
+              jsonObject["AREA_RESP"] = tarjetaMatch.area;
+          } else {
+            jsonObject["AREA_RESP"] = "CTRAL";
+          }
         }
 
         delete jsonObject["NOMBRE"];
@@ -325,7 +248,7 @@ async function run() {
           : jsonObject["LICENCIA"];
       const licencia2 =
         jsonObject["LICENCIA1"] === null ||
-        jsonObject["LICENCIA1"] === undefined
+          jsonObject["LICENCIA1"] === undefined
           ? " "
           : jsonObject["LICENCIA1"];
       delete jsonObject["LICENCIA"];
@@ -427,9 +350,9 @@ async function run() {
 
       jsonObject["VACACIONES"] = vacacionesMatchConfianza ||
         vacacionesMatchBase || {
-          PERIODO: 0,
-          FECHA_VACACIONES: null,
-        };
+        PERIODO: 0,
+        FECHA_VACACIONES: null,
+      };
 
       if (
         (jsonObject["NOMBRES"] && jsonObject["NOMBRES"].includes("VACANTE")) ||
@@ -442,25 +365,6 @@ async function run() {
         licenciaObject["status"] = 1;
         jsonObject["status"] = 1;
       }
-      if (
-        [
-          "1140041480100000220",
-          "1140041480100000222",
-          "1140041480100000223",
-          "1140041480100000227",
-          "1140041480100000226",
-        ].includes(jsonObject["PROYECTO"])
-      ) {
-        jsonObject["AREA_RESP"] = "AUD";
-      } else if (
-        ["1140051490100000500", "1140051490100000508"].includes(
-          jsonObject["PROYECTO"]
-        )
-      ) {
-        jsonObject["AREA_RESP"] = "PLAN";
-      } else {
-        jsonObject["AREA_RESP"] = "CTRAL";
-      }
 
       licenciaArray.push(licenciaObject);
       jsonArray.push(jsonObject);
@@ -470,11 +374,92 @@ async function run() {
 
     // Insert documents into PLANTILLA collection
     const resultPlantilla = await collectionPlantilla.insertMany(jsonArray);
+    // keep snapshot for later bitacora creation (before we remove LS entries)
+    const originalJsonArray = [...jsonArray];
+
+    // si una NUMPLA aparece con LS y con B, vamos a:
+    //   1. trasladar el documento LS a LICENCIAS
+    //   2. eliminar ese LS de PLANTILLA
+    //   3. (B se queda en PLANTILLA, sin cambios)
+    const numplasConLS = new Set();
+    const numplasConB = new Set();
+
+    jsonArray.forEach((item) => {
+      if ((item.TIPONOM || "").toUpperCase() === "LS") {
+        numplasConLS.add(item.NUMPLA);
+      }
+      if ((item.TIPONOM || "").toUpperCase() === "B") {
+        numplasConB.add(item.NUMPLA);
+      }
+    });
+
+    const licCollection = database.collection("LICENCIAS");
+    const licToInsert = [];
+    const idsToDelete = [];
+
+    // Para cada LS (dueño) que tenga un B (cubridor) en la misma NUMPLA
+    Object.entries(resultPlantilla.insertedIds).forEach(([idx, id]) => {
+      const item = jsonArray[idx];
+      const tip = (item.TIPONOM || "").toUpperCase();
+
+      if (tip === "LS" && numplasConB.has(item.NUMPLA)) {
+        // Crear documento para LICENCIAS con datos del LS (dueño)
+        const licenseDoc = {
+          _id: new ObjectId(),
+          id_employee: id, // el _id del LS que se va a LICENCIAS
+          status: item.status || 1,
+          ...item, // todos los campos del LS
+          // Mantener los ID_CTRL_* del LS (no cambiar)
+          ID_CTRL_ASIST: item.ID_CTRL_ASIST,
+          ID_CTRL_TALON: item.ID_CTRL_TALON,
+          ID_CTRL_NOM: item.ID_CTRL_NOM,
+          ID_CTRL_CAP: item.ID_CTRL_CAP,
+          ID_BITACORA: item.ID_BITACORA,
+        };
+
+        Object.keys(licenseDoc).forEach(
+          (k) => licenseDoc[k] === undefined && delete licenseDoc[k]
+        );
+
+        licToInsert.push(licenseDoc);
+        idsToDelete.push(id); // eliminar el LS de PLANTILLA
+      }
+    });
+
+    if (licToInsert.length > 0) {
+      await licCollection.insertMany(licToInsert, { ordered: false });
+      console.log(
+        `${licToInsert.length} dueños de plazas (TIPONOM 'LS') movidos a LICENCIAS.`
+      );
+    }
+
+    if (idsToDelete.length > 0) {
+      await collectionPlantilla.deleteMany({ _id: { $in: idsToDelete } });
+      console.log(
+        `${idsToDelete.length} dueños (LS) eliminados de PLANTILLA.`
+      );
+      // remove from jsonArray so later bulkWrite doesn't re-insert them
+      const deletedIdsSet = new Set(idsToDelete.map((o) => o.toString()));
+      jsonArray = jsonArray.filter((item, idx) => {
+        const id = resultPlantilla.insertedIds[idx];
+        return !deletedIdsSet.has(id.toString());
+      });
+    }
+
+    if (licToInsert.length > 0) {
+      await licCollection.updateMany(
+        { TIPONOM: "LS" },
+        { $set: { TIPONOM: "B" } }
+      );
+      console.log(
+        `${licToInsert.length} documentos en LICENCIAS: TIPONOM actualizado de LS a B.`
+      );
+    }
 
     // Crear objetos bitácora después de insertar en PLANTILLA_2025
     const bitacoraArray = Object.values(resultPlantilla.insertedIds).map(
       (id, index) => {
-        const empleado = jsonArray[index];
+        const empleado = originalJsonArray[index] || {};
         const personalEntries = [
           {
             autor: "SISTEMA",
@@ -615,17 +600,36 @@ async function run() {
     fs.writeFileSync("bitacora.json", JSON.stringify(bitacoraArray, null, 2));
     // Insert plazas.json into the PLAZAS collection
     const collectionPlazas = database.collection("PLAZAS");
-    const plazasData = JSON.parse(fs.readFileSync("plazas.json", "utf8"));
+
+    // Agrupar por NUMPLA: si existe LS, usar solo ese; si no, usar el primero
+    const plazasMap = new Map();
+    for (const plaza of licenciaArray) {
+      const numpla = plaza.NUMPLA;
+      if (!numpla) continue;
+
+      // Si no existe entrada para esta NUMPLA, o si la actual es LS (tienen prioridad)
+      if (!plazasMap.has(numpla)) {
+        plazasMap.set(numpla, plaza);
+      } else if ((plaza.TIPONOM || "").toUpperCase() === "LS") {
+        // Reemplazar si encontramos un LS (mayor prioridad)
+        plazasMap.set(numpla, plaza);
+      }
+    }
+
+    const plazasData = Array.from(plazasMap.values());
     await collectionPlazas.insertMany(plazasData);
 
     // Update plantilla before inserting into MongoDB
-    const bulkOpsPlantillaUpdate = jsonArray.map((item) => ({
-      updateOne: {
-        filter: { ID_CTRL_ASIST: item.ID_CTRL_ASIST },
-        update: { $set: item },
-        upsert: true,
-      },
-    }));
+    const bulkOpsPlantillaUpdate = jsonArray
+      .map((item) => ({
+        updateOne: {
+          filter: { ID_CTRL_ASIST: item.ID_CTRL_ASIST },
+          update: { $set: item },
+          upsert: true,
+        },
+      }))
+      // in case jsonArray still contained deleted docs, ensure none of their IDs are processed
+      .filter((op) => op.updateOne.filter.ID_CTRL_ASIST);
 
     await collectionPlantilla.bulkWrite(bulkOpsPlantillaUpdate);
 
@@ -664,14 +668,383 @@ async function run() {
     await collectionPlantilla.bulkWrite(bulkOpsPlantilla);
     await collectionBitacora.bulkWrite(bulkOpsBitacora);
 
-    console.log("Generating plantilla structure...");
+    // Crear incidencias vinculados a plantilla
+    try {
+      const collectionIncidencias = database.collection("INCIDENCIAS");
+      await collectionIncidencias.deleteMany({});
 
-    console.log("Updating PLANTILLA.json...");
-    console.log("Documents inserted into MongoDB successfully");
-    // setProyect();
+      // Obtenemos el json de los permisos económicos ya creados
+      const candidates = ["TRAMITES_EXISTENTES/incidencias.json"];
+      let pathFound = null;
+      for (const p of candidates) {
+        if (fs.existsSync(p)) {
+          pathFound = p;
+          break;
+        }
+      }
+
+      if (!pathFound) {
+        console.log("No se encontró el archivo de incidencias para crearlos.");
+      } else {
+        const raw = JSON.parse(fs.readFileSync(pathFound, "utf8"));
+        const docsToInsert = [];
+        const skipped = [];
+        for (const item of raw) {
+          const rfc = (item.RFC || "").toString().trim().toUpperCase();
+          if (!rfc) {
+            skipped.push({ original: item });
+            continue;
+          }
+
+          const plantillaDoc = await collectionPlantilla.findOne({ RFC: rfc });
+          if (!plantillaDoc) {
+            skipped.push({ original: item });
+            console.log(`El RFC: ${rfc} no se encontro en PLANTILLA, permiso económico no creado.`);
+            continue;
+          }
+
+          const newDoc = { ...item };
+          // Eliminar los id que vienene en el JSON
+          delete newDoc._id;
+          delete newDoc.ID_CTRL_ASIST;
+
+          // Agregar el id del empleado y ID_CTRL_ASIST desde PLANTILLA
+          newDoc.ID_CTRL_ASIST = plantillaDoc.ID_CTRL_ASIST || null;
+          if (newDoc.ID_CTRL_ASIST && typeof newDoc.ID_CTRL_ASIST === "string") {
+            try {
+              newDoc.ID_CTRL_ASIST = new ObjectId(newDoc.ID_CTRL_ASIST);
+            } catch (e) { }
+          }
+
+          newDoc.RFC = rfc;
+          newDoc._id = new ObjectId();
+          docsToInsert.push(newDoc);
+        }
+
+        if (docsToInsert.length > 0) {
+          const res = await collectionIncidencias.insertMany(docsToInsert);
+          console.log(`${Object.keys(res.insertedIds).length} incidencias creadas y vinculadas a PLANTILLA.`);
+        } else {
+          console.log("Incidencias no creadas, no se encontraron coincidencias con PLANTILLA.");
+        }
+
+        // Crear un JSON con los registros que no se pudieron crear por falta de coincidencia en PLANTILLA
+        if (skipped.length > 0) {
+          const outPath = "incidencias_no_creadas.json";
+          try {
+            fs.writeFileSync(outPath, JSON.stringify(skipped, null, 2), "utf8");
+            console.log(`${skipped.length} incidencias sin crear escritas en ${outPath}`);
+          } catch (werr) {
+            console.error("Error al generar el archivo de incidencias no creadas:", werr);
+          }
+        }
+      }
+    } catch (errPerm) {
+      console.error("Error creating incidencias:", errPerm);
+    }
+
+    // Crear permisos económicos vinculados a plantilla
+    try {
+      const collectionPermisosEconomicos = database.collection("PERMISOS_ECONOMICOS");
+      await collectionPermisosEconomicos.deleteMany({});
+
+      // Obtenemos el json de los permisos económicos ya creados
+      const candidates = ["TRAMITES_EXISTENTES/permisos_economicos.json"];
+      let pathFound = null;
+      for (const p of candidates) {
+        if (fs.existsSync(p)) {
+          pathFound = p;
+          break;
+        }
+      }
+
+      if (!pathFound) {
+        console.log("No se encontró el archivo de permisos económicos para crearlos.");
+      } else {
+        const raw = JSON.parse(fs.readFileSync(pathFound, "utf8"));
+        const docsToInsert = [];
+        const skipped = [];
+        for (const item of raw) {
+          const rfc = (item.RFC || "").toString().trim().toUpperCase();
+          if (!rfc) {
+            skipped.push({ original: item });
+            continue;
+          }
+
+          const plantillaDoc = await collectionPlantilla.findOne({ RFC: rfc });
+          if (!plantillaDoc) {
+            skipped.push({ original: item });
+            console.log(`El RFC: ${rfc} no se encontro en PLANTILLA, permiso económico no creado.`);
+            continue;
+          }
+
+          const newDoc = { ...item };
+          // Eliminar los id que vienene en el JSON
+          delete newDoc._id;
+          delete newDoc.id_empoyee;
+          delete newDoc.ID_CTRL_ASIST;
+
+          // Agregar el id del empleado y ID_CTRL_ASIST desde PLANTILLA
+          newDoc.id_empoyee = plantillaDoc._id;
+          newDoc.ID_CTRL_ASIST = plantillaDoc.ID_CTRL_ASIST || null;
+          if (newDoc.ID_CTRL_ASIST && typeof newDoc.ID_CTRL_ASIST === "string") {
+            try {
+              newDoc.ID_CTRL_ASIST = new ObjectId(newDoc.ID_CTRL_ASIST);
+            } catch (e) { }
+          }
+
+          newDoc.RFC = rfc;
+          newDoc._id = new ObjectId();
+          docsToInsert.push(newDoc);
+        }
+
+        if (docsToInsert.length > 0) {
+          const res = await collectionPermisosEconomicos.insertMany(docsToInsert);
+          console.log(`${Object.keys(res.insertedIds).length} permisos económicos creados y vinculados a PLANTILLA.`);
+        } else {
+          console.log("Permisos económicos no creados, no se encontraron coincidencias con PLANTILLA.");
+        }
+
+        // Crear un JSON con los registros que no se pudieron crear por falta de coincidencia en PLANTILLA
+        if (skipped.length > 0) {
+          const outPath = "permisos_economicos_no_creados.json";
+          try {
+            fs.writeFileSync(outPath, JSON.stringify(skipped, null, 2), "utf8");
+            console.log(`${skipped.length} permisos económicos sin crear escritos en ${outPath}`);
+          } catch (werr) {
+            console.error("Error al generar el archivo de permisos económicos no creados:", werr);
+          }
+        }
+      }
+    } catch (errPerm) {
+      console.error("Error creating permisos económicos:", errPerm);
+    }
+
+    // Crear incapacidades vinculados a plantilla
+    try {
+      const collectionIncapacidades = database.collection("INCAPACIDADES");
+      await collectionIncapacidades.deleteMany({});
+
+      // Obtenemos el json de los permisos económicos ya creados
+      const candidates = ["TRAMITES_EXISTENTES/incapacidades.json"];
+      let pathFound = null;
+      for (const p of candidates) {
+        if (fs.existsSync(p)) {
+          pathFound = p;
+          break;
+        }
+      }
+
+      if (!pathFound) {
+        console.log("No se encontró el archivo de incapacidades para crearlos.");
+      } else {
+        const raw = JSON.parse(fs.readFileSync(pathFound, "utf8"));
+        const docsToInsert = [];
+        const skipped = [];
+        for (const item of raw) {
+          const rfc = (item.RFC || "").toString().trim().toUpperCase();
+          if (!rfc) {
+            skipped.push({ original: item });
+            continue;
+          }
+
+          const plantillaDoc = await collectionPlantilla.findOne({ RFC: rfc });
+          if (!plantillaDoc) {
+            skipped.push({ original: item });
+            console.log(`El RFC: ${rfc} no se encontro en PLANTILLA, incapacidad no creada.`);
+            continue;
+          }
+
+          const newDoc = { ...item };
+          delete newDoc._id;
+          delete newDoc.id_empoyee;
+          delete newDoc.ID_CTRL_ASIST;
+          delete newDoc.RFC;
+
+          newDoc.id_empoyee = plantillaDoc._id;
+          newDoc.ID_CTRL_ASIST = plantillaDoc.ID_CTRL_ASIST || null;
+          if (newDoc.ID_CTRL_ASIST && typeof newDoc.ID_CTRL_ASIST === "string") {
+            try {
+              newDoc.ID_CTRL_ASIST = new ObjectId(newDoc.ID_CTRL_ASIST);
+            } catch (e) { }
+          }
+
+          newDoc._id = new ObjectId();
+          docsToInsert.push(newDoc);
+        }
+
+        if (docsToInsert.length > 0) {
+          const res = await collectionIncapacidades.insertMany(docsToInsert);
+          console.log(`${Object.keys(res.insertedIds).length} incapacidades creadas y vinculadas a PLANTILLA.`);
+        } else {
+          console.log("Incapacidades no creadas, no se encontraron coincidencias con PLANTILLA.");
+        }
+
+        // Crear un JSON con los registros que no se pudieron crear por falta de coincidencia en PLANTILLA
+        if (skipped.length > 0) {
+          const outPath = "incapacidades_no_creadas.json";
+          try {
+            fs.writeFileSync(outPath, JSON.stringify(skipped, null, 2), "utf8");
+            console.log(`${skipped.length} incapacidades sin crear escritos en ${outPath}`);
+          } catch (werr) {
+            console.error("Error al generar el archivo de incapacidades no creadas:", werr);
+          }
+        }
+      }
+    } catch (errPerm) {
+      console.error("Error creating incapacidades:", errPerm);
+    }
+
+    // Crear justificaciones vinculados a plantilla
+    try {
+      const collectionJustificaciones = database.collection("JUSTIFICACIONES");
+      await collectionJustificaciones.deleteMany({});
+
+      const candidates = ["TRAMITES_EXISTENTES/justificaciones.json"];
+      let pathFound = null;
+      for (const p of candidates) {
+        if (fs.existsSync(p)) {
+          pathFound = p;
+          break;
+        }
+      }
+
+      if (!pathFound) {
+        console.log("No se encontró el archivo de justificaciones para crearlos.");
+      } else {
+        const raw = JSON.parse(fs.readFileSync(pathFound, "utf8"));
+        const docsToInsert = [];
+        const skipped = [];
+        for (const item of raw) {
+          const rfc = (item.RFC || "").toString().trim().toUpperCase();
+          if (!rfc) {
+            skipped.push({ original: item });
+            continue;
+          }
+
+          const plantillaDoc = await collectionPlantilla.findOne({ RFC: rfc });
+          if (!plantillaDoc) {
+            skipped.push({ original: item });
+            console.log(`El RFC: ${rfc} no se encontro en PLANTILLA, justificacion no creada.`);
+            continue;
+          }
+
+          const newDoc = { ...item };
+          delete newDoc._id;
+          delete newDoc.id_empoyee;
+          delete newDoc.ID_CTRL_ASIST;
+          delete newDoc.RFC;
+
+          newDoc.id_empoyee = plantillaDoc._id;
+          newDoc.ID_CTRL_ASIST = plantillaDoc.ID_CTRL_ASIST || null;
+          if (newDoc.ID_CTRL_ASIST && typeof newDoc.ID_CTRL_ASIST === "string") {
+            try {
+              newDoc.ID_CTRL_ASIST = new ObjectId(newDoc.ID_CTRL_ASIST);
+            } catch (e) { }
+          }
+
+          newDoc._id = new ObjectId();
+          docsToInsert.push(newDoc);
+        }
+
+        if (docsToInsert.length > 0) {
+          const res = await collectionJustificaciones.insertMany(docsToInsert);
+          console.log(`${Object.keys(res.insertedIds).length} justificaciones creadas y vinculadas a PLANTILLA.`);
+        } else {
+          console.log("Justificaciones no creadas, no se encontraron coincidencias con PLANTILLA.");
+        }
+
+        if (skipped.length > 0) {
+          const outPath = "justificaciones_no_creadas.json";
+          try {
+            fs.writeFileSync(outPath, JSON.stringify(skipped, null, 2), "utf8");
+            console.log(`${skipped.length} justificaciones sin crear escritos en ${outPath}`);
+          } catch (werr) {
+            console.error("Error al generar el archivo de justificaciones no creadas:", werr);
+          }
+        }
+      }
+    } catch (errPerm) {
+      console.error("Error creating justificaciones:", errPerm);
+    }
+
+    // Crear permisos extraordinarios vinculados a plantilla
+    try {
+      const collectionPermisosExt = database.collection("PERMISOS_EXT");
+      await collectionPermisosExt.deleteMany({});
+
+      const candidates = ["TRAMITES_EXISTENTES/permisos_ext.json"];
+      let pathFound = null;
+      for (const p of candidates) {
+        if (fs.existsSync(p)) {
+          pathFound = p;
+          break;
+        }
+      }
+
+      if (!pathFound) {
+        console.log("No se encontró el archivo de permisos extraordinarios para crearlos.");
+      } else {
+        const raw = JSON.parse(fs.readFileSync(pathFound, "utf8"));
+        const docsToInsert = [];
+        const skipped = [];
+        for (const item of raw) {
+          const rfc = (item.RFC || "").toString().trim().toUpperCase();
+          if (!rfc) {
+            skipped.push({ original: item });
+            continue;
+          }
+
+          const plantillaDoc = await collectionPlantilla.findOne({ RFC: rfc });
+          if (!plantillaDoc) {
+            skipped.push({ original: item });
+            console.log(`El RFC: ${rfc} no se encontro en PLANTILLA, permiso extraordinario no creado.`);
+            continue;
+          }
+
+          const newDoc = { ...item };
+          delete newDoc._id;
+          delete newDoc.id_empoyee;
+          delete newDoc.ID_CTRL_ASIST;
+          delete newDoc.RFC;
+
+          newDoc.id_empoyee = plantillaDoc._id;
+          newDoc.ID_CTRL_ASIST = plantillaDoc.ID_CTRL_ASIST || null;
+          if (newDoc.ID_CTRL_ASIST && typeof newDoc.ID_CTRL_ASIST === "string") {
+            try {
+              newDoc.ID_CTRL_ASIST = new ObjectId(newDoc.ID_CTRL_ASIST);
+            } catch (e) { }
+          }
+
+          newDoc._id = new ObjectId();
+          docsToInsert.push(newDoc);
+        }
+
+        if (docsToInsert.length > 0) {
+          const res = await collectionPermisosExt.insertMany(docsToInsert);
+          console.log(`${Object.keys(res.insertedIds).length} permisos extraordinarios creadas y vinculadas a PLANTILLA.`);
+        } else {
+          console.log("Permisos extraordinarios no creadas, no se encontraron coincidencias con PLANTILLA.");
+        }
+
+        if (skipped.length > 0) {
+          const outPath = "permisos_ext_no_creados.json";
+          try {
+            fs.writeFileSync(outPath, JSON.stringify(skipped, null, 2), "utf8");
+            console.log(`${skipped.length} permisos extraordinarios sin crear escritos en ${outPath}`);
+          } catch (werr) {
+            console.error("Error al generar el archivo de permisos extraordinarios no creados:", werr);
+          }
+        }
+      }
+    } catch (errPerm) {
+      console.error("Error creating permisos extraordinarios:", errPerm);
+    }
+
     actualizarPlantillaDesdeMongo();
     procesarPlantillatipoNOM();
     actualizarTiponomEnPlazas();
+
   } catch (err) {
     console.error("Error:", err);
   } finally {

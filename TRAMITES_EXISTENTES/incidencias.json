@@ -1,0 +1,845 @@
+[{
+  "_id": {
+    "$oid": "6984ccc9f1a5fbb68aad26a7"
+  },
+  "NOMBRE": "MARTINEZ VASQUEZ MANUEL ALEJANDRO",
+  "CURP": "MAVM690120HOCRSN02",
+  "RFC": "MAVM690120NS7",
+  "PROYECTO": "1140041480100000222",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 1,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a4a7"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "27": "E",
+    "28": "E",
+    "30": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984cd98f1a5fbb68aad26d6"
+  },
+  "NOMBRE": "AVILA PAZ ANGEL ISAI",
+  "CURP": "AIPA930706HOCVZN06",
+  "RFC": "AIPA930706P68",
+  "PROYECTO": "1140041480100000226",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 6,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a176894f3"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "16": "V",
+    "20": "E",
+    "21": "V",
+    "26": "V",
+    "30": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 1.5,
+    "RETARDOS": 0,
+    "DIAS_DESCONTAR": 1.5
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1.5,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984ce9cf1a5fbb68aad2703"
+  },
+  "NOMBRE": "MARTINEZ LOPEZ MARBELLA IRAIS",
+  "CURP": "MALM880816MOCRPR09",
+  "RFC": "MALM880816EN8",
+  "PROYECTO": "1140041480100000223",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 4,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6af"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "16": "E",
+    "19": "E",
+    "20": "E",
+    "21": "E",
+    "22": "B",
+    "23": "E",
+    "26": "E",
+    "27": "B",
+    "29": "E",
+    "30": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 4,
+    "DIAS_DESCONTAR": 4
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 4,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984cf5cf1a5fbb68aad272f"
+  },
+  "NOMBRE": "ESPINOZA HERNANDEZ MARIA MAGDALENA",
+  "CURP": "EIHM660804MOCSRG06",
+  "RFC": "EIHM660804KB3",
+  "PROYECTO": "1140041480100000223",
+  "TIPONOM": "511",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 24,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768b5b4"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "16": "B",
+    "20": "E",
+    "22": "E",
+    "26": "E",
+    "28": "E",
+    "30": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 2,
+    "DIAS_DESCONTAR": 2
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 2,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984d04bf1a5fbb68aad2762"
+  },
+  "NOMBRE": "APARICIO LOPEZ ANGELICA",
+  "CURP": "AALA851215MOCPPN02",
+  "RFC": "AALA851215PWA",
+  "PROYECTO": "1140041480100000227",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 154,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6e6"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "16": "E",
+    "23": "E",
+    "26": "E",
+    "27": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984d315f1a5fbb68aad27cf"
+  },
+  "NOMBRE": "FLORES AQUINO FLOR MAGDALENA",
+  "CURP": "FOAF910722MOCLQL07",
+  "RFC": "FOAF910722HD9",
+  "PROYECTO": "1140041480100000228",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 64,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768b5aa"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "16": "E",
+    "19": "E",
+    "28": "B",
+    "30": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 2,
+    "DIAS_DESCONTAR": 2
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 2,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6984d3ddf1a5fbb68aad27ff"
+  },
+  "NOMBRE": "BAUTISTA RAMIREZ ALBERTO MIGUEL",
+  "CURP": "BARA771119HOCTML07",
+  "RFC": "BARA771119DD4",
+  "PROYECTO": "1140041480100000228",
+  "TIPONOM": "CCT",
+  "HORARIO": "9:00 A 17:00 HRS",
+  "NUMTARJETA": 141,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6d2"
+  },
+  "QUINCENA": 2,
+  "INCIDENCIAS": {
+    "22": "E",
+    "23": "B",
+    "29": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c585cfd8e8855fb0da26"
+  },
+  "NOMBRE": "MARTINEZ LOPEZ MARBELLA IRAIS",
+  "CURP": "MALM880816MOCRPR09",
+  "RFC": "MALM880816EN8",
+  "PROYECTO": "1140041480100000223",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 4,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6af"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "E",
+    "12": "E",
+    "13": "E",
+    "04": "E",
+    "05": "B",
+    "09": "B"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 3,
+    "DIAS_DESCONTAR": 3
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 3,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c5c9cfd8e8855fb0da49"
+  },
+  "NOMBRE": "OLIVERA REYES CECILIA LIZBETH",
+  "CURP": "OIRC901122MOCLYC05",
+  "RFC": "OIRC901122DC0",
+  "PROYECTO": "1140041480100000220",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 2,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a704"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "E",
+    "13": "E",
+    "03": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c62bcfd8e8855fb0da74"
+  },
+  "NOMBRE": "ESPINOZA HERNANDEZ MARIA MAGDALENA",
+  "CURP": "EIHM660804MOCSRG06",
+  "RFC": "EIHM660804KB3",
+  "PROYECTO": "1140041480100000223",
+  "TIPONOM": "511",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 24,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768b5b4"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "10": "E",
+    "11": "E",
+    "12": "E",
+    "13": "B",
+    "04": "B",
+    "06": "E",
+    "09": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 3,
+    "DIAS_DESCONTAR": 3
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 3,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c67ecfd8e8855fb0daae"
+  },
+  "NOMBRE": "FLORES AQUINO FLOR MAGDALENA",
+  "CURP": "FOAF910722MOCLQL07",
+  "RFC": "FOAF910722HD9",
+  "PROYECTO": "1140041480100000228",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 64,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768b5aa"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "12": "E",
+    "13": "E",
+    "04": "E",
+    "05": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c761cfd8e8855fb0daec"
+  },
+  "NOMBRE": "CRUZ JIMENEZ PAOLA DENISE",
+  "CURP": "CUJP950609MOCRML01",
+  "RFC": "CUJP950609F67",
+  "PROYECTO": "1140041480100000220",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 69,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6b4"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "10": "E",
+    "12": "E",
+    "05": "E",
+    "06": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c7dfcfd8e8855fb0db20"
+  },
+  "NOMBRE": "VALENCIA LOPEZ ARCELIA",
+  "CURP": "VALA850718MOCLPR06",
+  "RFC": "VALA850718B17",
+  "PROYECTO": "1140041480100000220",
+  "TIPONOM": "CCT",
+  "HORARIO": "08:00 A 16:00 HRS.",
+  "NUMTARJETA": 71,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768975a"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "10": "E",
+    "11": "E",
+    "12": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c80acfd8e8855fb0db54"
+  },
+  "NOMBRE": "VENTURA CRUZ MARIA TEODORA",
+  "CURP": "VECT771109MOCNRD02",
+  "RFC": "VECT771109R91",
+  "PROYECTO": "1140041480100000229",
+  "TIPONOM": "511",
+  "HORARIO": "08:00 A 16:00 HRS.",
+  "NUMTARJETA": 104,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768aa6f"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "E",
+    "12": "E",
+    "04": "E",
+    "06": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c82fcfd8e8855fb0db8c"
+  },
+  "NOMBRE": "DEL ANGEL CISNEROS OMAR",
+  "CURP": "AECO690701HMCNSM09",
+  "RFC": "AECO690701H85",
+  "PROYECTO": "1140041480100000221",
+  "TIPONOM": "511",
+  "HORARIO": "08:00 A 16:00 HRS.",
+  "NUMTARJETA": 112,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768aa65"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "10": "E",
+    "11": "E",
+    "03": "E",
+    "04": "E",
+    "09": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c851cfd8e8855fb0dbc8"
+  },
+  "NOMBRE": "FRANCO SIBAJA ALEJANDRO MANFRED",
+  "CURP": "FASA790101HOCRBL01",
+  "RFC": "FASA790101TA1",
+  "PROYECTO": "1140041480100000220",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 129,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a551"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "12": "E",
+    "06": "E",
+    "09": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994c879cfd8e8855fb0dc08"
+  },
+  "NOMBRE": "AVILA PAZ ANGEL ISAI",
+  "CURP": "AIPA930706HOCVZN06",
+  "RFC": "AIPA930706P68",
+  "PROYECTO": "1140041480100000226",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 6,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a176894f3"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "E",
+    "12": "V",
+    "03": "E",
+    "06": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0.5,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1.5
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1.5,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994d2f2cfd8e8855fb0dcf1"
+  },
+  "NOMBRE": "DIAZ ALONSO LUIS ALBERTO",
+  "CURP": "DIAL941211HOCZLS00",
+  "RFC": "DIAL941211QQ9",
+  "PROYECTO": "1140051490100000508",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 42,
+  "SEXO": "H",
+  "AREA_RESP": "PLAN",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a176895b6"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "03": "A",
+    "09": "A"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 2,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 0,
+    "DIAS_DESCONTAR": 2
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 0,
+    "INASISTENCIAS": 2
+  }
+},
+{
+  "_id": {
+    "$oid": "6994d3abcfd8e8855fb0dd37"
+  },
+  "NOMBRE": "MIJANGOS CRUZ EMMANUEL",
+  "CURP": "MICE860903HOCJRM04",
+  "RFC": "MICE860903SU2",
+  "PROYECTO": "1140051490100000508",
+  "TIPONOM": "M51",
+  "HORARIO": "09:00 A 15:00 HRS.",
+  "NUMTARJETA": 141,
+  "SEXO": "H",
+  "AREA_RESP": "PLAN",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a17689d27"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "12": "E",
+    "05": "E",
+    "09": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994d70acfd8e8855fb0ddba"
+  },
+  "NOMBRE": "ROBLES GONZALEZ YAIR",
+  "CURP": "ROGY970220HOCBNR07",
+  "RFC": "ROGY9702205J6",
+  "PROYECTO": "1140051490100000508",
+  "TIPONOM": "F51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 184,
+  "SEXO": "H",
+  "AREA_RESP": "PLAN",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a911"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "03": "E",
+    "05": "V",
+    "06": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994d88acfd8e8855fb0de01"
+  },
+  "NOMBRE": "SANGINEZ CONTRERAS GABRIEL LEMUEL",
+  "CURP": "SACG930210HOCNNB06",
+  "RFC": "SACG930210G68",
+  "PROYECTO": "1140051490100000508",
+  "TIPONOM": "M51",
+  "HORARIO": "9:00 A 15:00 HRS",
+  "NUMTARJETA": 201,
+  "SEXO": "H",
+  "AREA_RESP": "PLAN",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768959d"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "A",
+    "12": "A",
+    "13": "A"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 3,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 0,
+    "DIAS_DESCONTAR": 3
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 0,
+    "INASISTENCIAS": 3
+  }
+},
+{
+  "_id": {
+    "$oid": "6994d8c5cfd8e8855fb0de20"
+  },
+  "NOMBRE": "LOPEZ FONSECA ALICIA",
+  "CURP": "LOFA770623MVZPNL04",
+  "RFC": "LOFA7706233D6",
+  "PROYECTO": "1140091440300000100",
+  "TIPONOM": "M51",
+  "HORARIO": "09:00 A 15:00 HRS.",
+  "NUMTARJETA": 245,
+  "SEXO": "M",
+  "AREA_RESP": "PLAN",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a353"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "12": "A"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 1,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 0,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 0,
+    "INASISTENCIAS": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "6994db9bcfd8e8855fb0dec7"
+  },
+  "NOMBRE": "VARGAS HERNANDEZ VIRGINIA",
+  "CURP": "VAHV890601MOCRRR09",
+  "RFC": "VAHV890601NZ7",
+  "PROYECTO": "1140041480100000227",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 170,
+  "SEXO": "M",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a6b9"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "13": "B"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "6994dbbbcfd8e8855fb0deec"
+  },
+  "NOMBRE": "RUIZ BLAS FRANCISCO",
+  "CURP": "RUBF890805HOCZLR05",
+  "RFC": "RUBF890805EC2",
+  "PROYECTO": "1140041480100000220",
+  "TIPONOM": "CCT",
+  "HORARIO": "8:00 A 16:00 HRS",
+  "NUMTARJETA": 155,
+  "SEXO": "H",
+  "AREA_RESP": "AUD",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768b5af"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "10": "A"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 1,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 0,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 0,
+    "INASISTENCIAS": 1
+  }
+},
+{
+  "_id": {
+    "$oid": "6998be52b97289d294a26eb3"
+  },
+  "NOMBRE": "HERNANDEZ CABALLERO IRAIS",
+  "CURP": "HECI821009MDFRBR08",
+  "RFC": "HECI821009BA6",
+  "PROYECTO": "1140020000000000200",
+  "TIPONOM": "CCT",
+  "HORARIO": "08:00 A 16:00 HRS.",
+  "NUMTARJETA": 12,
+  "SEXO": "M",
+  "AREA_RESP": "CTRAL",
+  "ID_CTRL_ASIST": {
+    "$oid": "697276760359839a1768a637"
+  },
+  "QUINCENA": 3,
+  "INCIDENCIAS": {
+    "11": "E",
+    "05": "E",
+    "06": "E"
+  },
+  "CONTADORES": {
+    "INASISTENCIAS": 0,
+    "MEDIO_DIAS": 0,
+    "RETARDOS": 1,
+    "DIAS_DESCONTAR": 1
+  },
+  "CONTADORES_REPORTE": {
+    "RETARDOS": 1,
+    "INASISTENCIAS": 0
+  }
+}]

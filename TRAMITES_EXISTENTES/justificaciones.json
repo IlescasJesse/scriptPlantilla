@@ -1,0 +1,3712 @@
+[
+  {
+    "_id": {
+      "$oid": "697ce8449c0e640065cfeecc"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": "8:00",
+    "HORA_HASTA": "12:29",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "00729",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "697ce9b99c0e640065cfef19"
+    },
+    "id_empoyee": "697276770359839a1768bfa2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6f"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": "8:00",
+    "HORA_HASTA": "08:50",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 104,
+    "FOLIO": "00476",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "VECT771109R91"
+  },
+  {
+    "_id": {
+      "$oid": "697cf1ba9c0e640065cfeffe"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-16",
+    "HORA_DESDE": "8:00",
+    "HORA_HASTA": "09:30",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "00403",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "697cf1fb9c0e640065cff008"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": "8:00",
+    "HORA_HASTA": "9:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "01010",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "697cf28e9c0e640065cff02c"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00501",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf31f9c0e640065cff04c"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-26",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00873",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf3919c0e640065cff079"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-27",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00873",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf3de9c0e640065cff088"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-28",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00873",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf4069c0e640065cff093"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-29",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00873",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf4409c0e640065cff09f"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 80,
+    "FOLIO": "00873",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf6019c0e640065cff0d3"
+    },
+    "id_empoyee": "697276770359839a1768c03d",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad76"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 95,
+    "FOLIO": "00872",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "MARR6509023Z1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf6269c0e640065cff0dd"
+    },
+    "id_empoyee": "697276770359839a1768c03d",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad76"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 95,
+    "FOLIO": "00872",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "MARR6509023Z1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf64c9c0e640065cff0e8"
+    },
+    "id_empoyee": "697276770359839a1768c03d",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad76"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 95,
+    "FOLIO": "00872",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "MARR6509023Z1"
+  },
+  {
+    "_id": {
+      "$oid": "697cf78b9c0e640065cff121"
+    },
+    "id_empoyee": "697276770359839a1768bf4b",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a8bc"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 106,
+    "FOLIO": "00501",
+    "TIPO_COMPROBANTE": "JUSTIFICATE CENDI",
+    "RFC": "AUAC8205212L1"
+  },
+  {
+    "_id": {
+      "$oid": "69824c979c0e640065d00105"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": "7:00",
+    "HORA_HASTA": "8:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "1187",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "69824cca9c0e640065d0010e"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-28",
+    "HORA_DESDE": "7:00",
+    "HORA_HASTA": "8:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "1187",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "69824e1f9c0e640065d00126"
+    },
+    "id_empoyee": "697276770359839a1768bb57",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f8"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 67,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CUIDADOS MATERNOS",
+    "RFC": "HEPD920706H55"
+  },
+  {
+    "_id": {
+      "$oid": "69824e4f9c0e640065d0012f"
+    },
+    "id_empoyee": "697276770359839a1768bb57",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f8"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 67,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CUIDADOS MATERNOS",
+    "RFC": "HEPD920706H55"
+  },
+  {
+    "_id": {
+      "$oid": "69824f269c0e640065d0015f"
+    },
+    "id_empoyee": "697276770359839a1768bbba",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176896e7"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 62,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE MEDICO",
+    "RFC": "VAML9805275X3"
+  },
+  {
+    "_id": {
+      "$oid": "69824f9f9c0e640065d00175"
+    },
+    "id_empoyee": "697276770359839a1768bc0f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689890"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": "9:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 68,
+    "FOLIO": "1177",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "HERS711231HP0"
+  },
+  {
+    "_id": {
+      "$oid": "69836f7a9c0e640065d00236"
+    },
+    "id_empoyee": "697276770359839a1768beed",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6e6"
+    },
+    "FECHA": "2026-01-28",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 154,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AALA851215PWA"
+  },
+  {
+    "_id": {
+      "$oid": "69836fe69c0e640065d0025b"
+    },
+    "id_empoyee": "697276770359839a1768bfa0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa65"
+    },
+    "FECHA": "2026-01-29",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 112,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AECO690701H85"
+  },
+  {
+    "_id": {
+      "$oid": "698370339c0e640065d0027c"
+    },
+    "id_empoyee": "697276770359839a1768bfa1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6a"
+    },
+    "FECHA": "2026-01-29",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 93,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MISV6201315T9"
+  },
+  {
+    "_id": {
+      "$oid": "6983705e9c0e640065d0028d"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-28",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "698370819c0e640065d0029d"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "698370a29c0e640065d002ac"
+    },
+    "id_empoyee": "697276770359839a1768bc10",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689895"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 59,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "LUPD651220CG2"
+  },
+  {
+    "_id": {
+      "$oid": "698371089c0e640065d002d6"
+    },
+    "id_empoyee": "697276770359839a1768bee9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d2"
+    },
+    "FECHA": "2026-01-28",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "RFC": "BARA771119DD4"
+  },
+  {
+    "_id": {
+      "$oid": "698371539c0e640065d002f2"
+    },
+    "id_empoyee": "697276770359839a1768bd78",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f9d"
+    },
+    "FECHA": "2026-01-29",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 91,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "TOFK910611FD5"
+  },
+  {
+    "_id": {
+      "$oid": "698371689c0e640065d00301"
+    },
+    "id_empoyee": "697276770359839a1768c148",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2ad"
+    },
+    "FECHA": "2026-01-30",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 38,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "CARJ700925AL8"
+  },
+  {
+    "_id": {
+      "$oid": "698371979c0e640065d00316"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "698371a49c0e640065d00320"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "698371b39c0e640065d0032a"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "698371cd9c0e640065d0033a"
+    },
+    "id_empoyee": "697276770359839a1768bbd0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689755"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 157,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "LOVP970310T81"
+  },
+  {
+    "_id": {
+      "$oid": "698371e49c0e640065d0034a"
+    },
+    "id_empoyee": "697276770359839a1768bb54",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894e9"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 72,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "GAMN840813CJ2"
+  },
+  {
+    "_id": {
+      "$oid": "698372089c0e640065d0035a"
+    },
+    "id_empoyee": "697276770359839a1768bef1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6fa"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 58,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "RFC": "JILM930511BK2"
+  },
+  {
+    "_id": {
+      "$oid": "698372339c0e640065d00371"
+    },
+    "id_empoyee": "697276770359839a1768c1e1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5aa"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 64,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "FOAF910722HD9"
+  },
+  {
+    "_id": {
+      "$oid": "698372569c0e640065d00381"
+    },
+    "id_empoyee": "697276770359839a1768bee2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6af"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 4,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MALM880816EN8"
+  },
+  {
+    "_id": {
+      "$oid": "6983727f9c0e640065d00394"
+    },
+    "id_empoyee": "697276770359839a1768bfa6",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa83"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 120,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "TOPM681020HS1"
+  },
+  {
+    "_id": {
+      "$oid": "698372a09c0e640065d003a6"
+    },
+    "id_empoyee": "697276770359839a1768bcee",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689ceb"
+    },
+    "FECHA": "2026-01-16",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 77,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "GASF951031K16"
+  },
+  {
+    "_id": {
+      "$oid": "698372ba9c0e640065d003b5"
+    },
+    "id_empoyee": "697276770359839a1768bd2f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e30"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 14,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "CENA970321ISA"
+  },
+  {
+    "_id": {
+      "$oid": "698372d69c0e640065d003c5"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-16",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698373460e2d89115e376bf3"
+    },
+    "id_empoyee": "697276770359839a1768c148",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2ad"
+    },
+    "FECHA": "2026-01-16",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 38,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "CARJ700925AL8"
+  },
+  {
+    "_id": {
+      "$oid": "698374660e2d89115e376c27"
+    },
+    "id_empoyee": "697276770359839a1768bb56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f3"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 6,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "AIPA930706P68"
+  },
+  {
+    "_id": {
+      "$oid": "698374a70e2d89115e376c3b"
+    },
+    "id_empoyee": "697276770359839a1768bee9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d2"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "BARA771119DD4"
+  },
+  {
+    "_id": {
+      "$oid": "698374c30e2d89115e376c4c"
+    },
+    "id_empoyee": "697276770359839a1768bee9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d2"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "RFC": "BARA771119DD4"
+  },
+  {
+    "_id": {
+      "$oid": "698374e20e2d89115e376c5b"
+    },
+    "id_empoyee": "697276770359839a1768bd78",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f9d"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 91,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "TOFK910611FD5"
+  },
+  {
+    "_id": {
+      "$oid": "698374ef0e2d89115e376c64"
+    },
+    "id_empoyee": "697276770359839a1768bd78",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f9d"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 91,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "TOFK910611FD5"
+  },
+  {
+    "_id": {
+      "$oid": "6983750c0e2d89115e376c73"
+    },
+    "id_empoyee": "697276770359839a1768c1e8",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5cd"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 25,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "CUCM7404116LA"
+  },
+  {
+    "_id": {
+      "$oid": "6983753b0e2d89115e376c84"
+    },
+    "id_empoyee": "697276770359839a1768c1e5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5be"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 65,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MUVL631211EH6"
+  },
+  {
+    "_id": {
+      "$oid": "698375500e2d89115e376c93"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-19",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "6983755e0e2d89115e376c9a"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-20",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "698375800e2d89115e376cb2"
+    },
+    "id_empoyee": "697276770359839a1768c1e5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5be"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 65,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MUVL631211EH6"
+  },
+  {
+    "_id": {
+      "$oid": "6983759a0e2d89115e376cc0"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "698375be0e2d89115e376cd1"
+    },
+    "id_empoyee": "697276770359839a1768c1e7",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5c8"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 22,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "AECA880402UB1"
+  },
+  {
+    "_id": {
+      "$oid": "698375e50e2d89115e376ce2"
+    },
+    "id_empoyee": "697276770359839a1768bef0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6f5"
+    },
+    "FECHA": "2026-01-26",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 10,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "LOCA831110GF4"
+  },
+  {
+    "_id": {
+      "$oid": "698376040e2d89115e376cf1"
+    },
+    "id_empoyee": "697276770359839a1768c1e0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5a5"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 16,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MEEA900807C79"
+  },
+  {
+    "_id": {
+      "$oid": "6983761e0e2d89115e376d01"
+    },
+    "id_empoyee": "697276770359839a1768bfa1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6a"
+    },
+    "FECHA": "2026-01-21",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 93,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "MISV6201315T9"
+  },
+  {
+    "_id": {
+      "$oid": "6983762e0e2d89115e376d08"
+    },
+    "id_empoyee": "697276770359839a1768bfa1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6a"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 93,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "RFC": "MISV6201315T9"
+  },
+  {
+    "_id": {
+      "$oid": "698376680e2d89115e376d22"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698376930e2d89115e376d30"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-23",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698376d40e2d89115e376d4c"
+    },
+    "id_empoyee": "697276770359839a1768be2b",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a31c"
+    },
+    "FECHA": "2026-01-22",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 70,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO": "ENTRADA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "FUCA820121375"
+  },
+  {
+    "_id": {
+      "$oid": "698376df0e2d89115e376d59"
+    },
+    "id_empoyee": "697276770359839a1768be2b",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a31c"
+    },
+    "FECHA": "2026-01-23",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 70,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO": "ENTRADA",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": false,
+    "RFC": "FUCA820121375"
+  },
+  {
+    "_id": {
+      "$oid": "698377590e2d89115e376d82"
+    },
+    "id_empoyee": "697276770359839a1768c1e8",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5cd"
+    },
+    "FECHA": "2026-01-23",
+    "HORA_DESDE": null,
+    "HORA_HASTA": null,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 25,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO": "SALIDA",
+    "HORARIO_ENTRADA": false,
+    "HORARIO_SALIDA": true,
+    "RFC": "CUCM7404116LA"
+  },
+  {
+    "_id": {
+      "$oid": "6983a4b3f1a5fbb68aad1c8e"
+    },
+    "id_empoyee": "697276770359839a1768beed",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6e6"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 154,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AALA851215PWA"
+  },
+  {
+    "_id": {
+      "$oid": "6983a4e1f1a5fbb68aad1c9f"
+    },
+    "id_empoyee": "697276770359839a1768bfa0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa65"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 112,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AECO690701H85"
+  },
+  {
+    "_id": {
+      "$oid": "6983a510f1a5fbb68aad1cb2"
+    },
+    "id_empoyee": "697276770359839a1768bfa5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa7e"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 146,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GOVR720307CJ3"
+  },
+  {
+    "_id": {
+      "$oid": "6983a578f1a5fbb68aad1cd4"
+    },
+    "id_empoyee": "697276770359839a1768bfa1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6a"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 93,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MISV6201315T9"
+  },
+  {
+    "_id": {
+      "$oid": "6983a5ccf1a5fbb68aad1cee"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "HORARIO_SALIDA": true,
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "6984c2d8f1a5fbb68aad22c1"
+    },
+    "id_empoyee": "697276770359839a1768bfa6",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa83"
+    },
+    "FECHA": "2026-01-30",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 120,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "TOPM681020HS1"
+  },
+  {
+    "_id": {
+      "$oid": "6984c2f6f1a5fbb68aad22d2"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-30",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "6984c33bf1a5fbb68aad22ec"
+    },
+    "id_empoyee": "697276770359839a1768bfa0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa65"
+    },
+    "FECHA": "2026-01-19",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 112,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AECO690701H85"
+  },
+  {
+    "_id": {
+      "$oid": "6984c348f1a5fbb68aad22f4"
+    },
+    "id_empoyee": "697276770359839a1768bfa0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa65"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 112,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AECO690701H85"
+  },
+  {
+    "_id": {
+      "$oid": "6984c35df1a5fbb68aad2303"
+    },
+    "id_empoyee": "697276770359839a1768bfa5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa7e"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 146,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GOVR720307CJ3"
+  },
+  {
+    "_id": {
+      "$oid": "6984c381f1a5fbb68aad231a"
+    },
+    "id_empoyee": "697276770359839a1768c1e0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5a5"
+    },
+    "FECHA": "2026-01-16",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 16,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MEEA900807C79"
+  },
+  {
+    "_id": {
+      "$oid": "6984c3a0f1a5fbb68aad232b"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-01-16",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "6984c3b0f1a5fbb68aad2334"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-01-19",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "6984c41df1a5fbb68aad235e"
+    },
+    "id_empoyee": "697276770359839a1768bbd0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689755"
+    },
+    "FECHA": "2026-01-22",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 157,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "LOVP970310T81"
+  },
+  {
+    "_id": {
+      "$oid": "6984c446f1a5fbb68aad2377"
+    },
+    "id_empoyee": "697276770359839a1768bd2f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e30"
+    },
+    "FECHA": "2026-01-23",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 14,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CENA970321ISA"
+  },
+  {
+    "_id": {
+      "$oid": "6984c475f1a5fbb68aad238e"
+    },
+    "id_empoyee": "697276770359839a1768bfa3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa74"
+    },
+    "FECHA": "2026-01-22",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 82,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CASJ660404QV6"
+  },
+  {
+    "_id": {
+      "$oid": "6984c491f1a5fbb68aad23a1"
+    },
+    "id_empoyee": "697276770359839a1768bfa2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6f"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 104,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VECT771109R91"
+  },
+  {
+    "_id": {
+      "$oid": "6984c4a9f1a5fbb68aad23b2"
+    },
+    "id_empoyee": "697276770359839a1768bee4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6b9"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 170,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VAHV890601NZ7"
+  },
+  {
+    "_id": {
+      "$oid": "6984c4c9f1a5fbb68aad23c2"
+    },
+    "id_empoyee": "697276770359839a1768bfa3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa74"
+    },
+    "FECHA": "2026-01-27",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 82,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CASJ660404QV6"
+  },
+  {
+    "_id": {
+      "$oid": "6984c582f1a5fbb68aad23e2"
+    },
+    "id_empoyee": "697276770359839a1768c1e1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5aa"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 64,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "FOAF910722HD9"
+  },
+  {
+    "_id": {
+      "$oid": "6984c59af1a5fbb68aad23f2"
+    },
+    "id_empoyee": "697276770359839a1768bee2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6af"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 4,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MALM880816EN8"
+  },
+  {
+    "_id": {
+      "$oid": "6984c5adf1a5fbb68aad2401"
+    },
+    "id_empoyee": "697276770359839a1768c1e1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5aa"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 64,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "FOAF910722HD9"
+  },
+  {
+    "_id": {
+      "$oid": "6984c5c0f1a5fbb68aad2410"
+    },
+    "id_empoyee": "697276770359839a1768bfa2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6f"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 104,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VECT771109R91"
+  },
+  {
+    "_id": {
+      "$oid": "6984c5d7f1a5fbb68aad241f"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-01-27",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "6984c5e2f1a5fbb68aad2427"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "6984c607f1a5fbb68aad243b"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-22",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "6984c614f1a5fbb68aad2442"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-23",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "6984c622f1a5fbb68aad244a"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-01-27",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "6984c640f1a5fbb68aad245c"
+    },
+    "id_empoyee": "697276770359839a1768bef2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6ff"
+    },
+    "FECHA": "2026-01-27",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 30,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "DICR890113IJ0"
+  },
+  {
+    "_id": {
+      "$oid": "6984c65cf1a5fbb68aad2473"
+    },
+    "id_empoyee": "697276770359839a1768bb56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f3"
+    },
+    "FECHA": "2026-01-23",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 6,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AIPA930706P68"
+  },
+  {
+    "_id": {
+      "$oid": "6984c678f1a5fbb68aad248b"
+    },
+    "id_empoyee": "697276770359839a1768bb52",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894df"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 83,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VAVA960801121"
+  },
+  {
+    "_id": {
+      "$oid": "6984c68df1a5fbb68aad249b"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "6984c6a7f1a5fbb68aad24ab"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "6984c6bbf1a5fbb68aad24bd"
+    },
+    "id_empoyee": "697276770359839a1768beeb",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6dc"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 49,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "LALG770609T37"
+  },
+  {
+    "_id": {
+      "$oid": "6984c6dcf1a5fbb68aad24d7"
+    },
+    "id_empoyee": "697276770359839a1768c1e2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5af"
+    },
+    "FECHA": "2026-01-26",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 155,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "RUBF890805EC2"
+  },
+  {
+    "_id": {
+      "$oid": "6984c6f2f1a5fbb68aad24e8"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "6984c709f1a5fbb68aad24f7"
+    },
+    "id_empoyee": "697276770359839a1768bee7",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6c8"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 35,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUMM900605RP2"
+  },
+  {
+    "_id": {
+      "$oid": "6984c722f1a5fbb68aad2508"
+    },
+    "id_empoyee": "697276770359839a1768c1de",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b59b"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 26,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HERC881104QH3"
+  },
+  {
+    "_id": {
+      "$oid": "6984c73af1a5fbb68aad251a"
+    },
+    "id_empoyee": "697276770359839a1768c1e8",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5cd"
+    },
+    "FECHA": "2026-01-28",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 25,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUCM7404116LA"
+  },
+  {
+    "_id": {
+      "$oid": "6984c746f1a5fbb68aad2521"
+    },
+    "id_empoyee": "697276770359839a1768c1e8",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5cd"
+    },
+    "FECHA": "2026-01-29",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 25,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUCM7404116LA"
+  },
+  {
+    "_id": {
+      "$oid": "698cdaab275cbb4cf67994fc"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698cdb63275cbb4cf6799519"
+    },
+    "id_empoyee": "697276770359839a1768c1e6",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5c3"
+    },
+    "FECHA": "2026-02-03",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 45,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUNJ900516FZ4"
+  },
+  {
+    "_id": {
+      "$oid": "698cdb9a275cbb4cf679952e"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-02-03",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "698cdbd2275cbb4cf6799549"
+    },
+    "id_empoyee": "697276770359839a1768c1e0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5a5"
+    },
+    "FECHA": "2026-02-04",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 16,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MEEA900807C79"
+  },
+  {
+    "_id": {
+      "$oid": "698cdc64275cbb4cf679957b"
+    },
+    "id_empoyee": "697276770359839a1768bef2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6ff"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 30,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "DICR890113IJ0"
+  },
+  {
+    "_id": {
+      "$oid": "698cdc81275cbb4cf6799585"
+    },
+    "id_empoyee": "697276770359839a1768bef2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6ff"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 30,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "DICR890113IJ0"
+  },
+  {
+    "_id": {
+      "$oid": "698cdce3275cbb4cf679959a"
+    },
+    "id_empoyee": "697276770359839a1768bfa6",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa83"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 120,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "TOPM681020HS1"
+  },
+  {
+    "_id": {
+      "$oid": "698cdcf2275cbb4cf67995a3"
+    },
+    "id_empoyee": "697276770359839a1768bfa6",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa83"
+    },
+    "FECHA": "2026-02-06",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 120,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "TOPM681020HS1"
+  },
+  {
+    "_id": {
+      "$oid": "698cddb0275cbb4cf67995c1"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-06",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698cddc1275cbb4cf67995ca"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698cddd3275cbb4cf67995d3"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "698ce077275cbb4cf6799641"
+    },
+    "id_empoyee": "697276770359839a1768c1e9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d2"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 28,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GACY8505292X6"
+  },
+  {
+    "_id": {
+      "$oid": "698ce0ba275cbb4cf679965a"
+    },
+    "id_empoyee": "697276770359839a1768bd78",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f9d"
+    },
+    "FECHA": "2026-02-04",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 91,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "TOFK910611FD5"
+  },
+  {
+    "_id": {
+      "$oid": "698ce119275cbb4cf6799685"
+    },
+    "id_empoyee": "697276770359839a1768bb56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f3"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 6,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AIPA930706P68"
+  },
+  {
+    "_id": {
+      "$oid": "698ce154275cbb4cf67996a7"
+    },
+    "id_empoyee": "697276770359839a1768c148",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2ad"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 38,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CARJ700925AL8"
+  },
+  {
+    "_id": {
+      "$oid": "698ce1a3275cbb4cf67996bd"
+    },
+    "id_empoyee": "697276770359839a1768bd2f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e30"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 14,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CENA970321ISA"
+  },
+  {
+    "_id": {
+      "$oid": "698ce1b3275cbb4cf67996cb"
+    },
+    "id_empoyee": "697276770359839a1768bd2f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e30"
+    },
+    "FECHA": "2026-02-06",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 14,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CENA970321ISA"
+  },
+  {
+    "_id": {
+      "$oid": "698dfffc275cbb4cf6799fcc"
+    },
+    "id_empoyee": "697276770359839a1768c148",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2ad"
+    },
+    "FECHA": "2026-02-10",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 38,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "CARJ700925AL8"
+  },
+  {
+    "_id": {
+      "$oid": "698e0097275cbb4cf6799ff8"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-02-04",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "08:20",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "698e00d9275cbb4cf679a014"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-02-09",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "08:15",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "698e0156275cbb4cf679a05d"
+    },
+    "id_empoyee": "697276770359839a1768bfa1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa6a"
+    },
+    "FECHA": "2026-02-09",
+    "HORA_DESDE": "14:15",
+    "HORA_HASTA": "16:30",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 93,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "MISV6201315T9"
+  },
+  {
+    "_id": {
+      "$oid": "698f75b43a0ddddd56b40472"
+    },
+    "id_empoyee": "697276770359839a1768bd75",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f8e"
+    },
+    "FECHA": "2026-02-12",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 51,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "AOLR830310171"
+  },
+  {
+    "_id": {
+      "$oid": "698f761e3a0ddddd56b4048f"
+    },
+    "id_empoyee": "697276770359839a1768bee2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6af"
+    },
+    "FECHA": "2026-02-06",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 4,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MALM880816EN8"
+  },
+  {
+    "_id": {
+      "$oid": "698f76473a0ddddd56b4049e"
+    },
+    "id_empoyee": "697276770359839a1768c1e1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5aa"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 64,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "FOAF910722HD9"
+  },
+  {
+    "_id": {
+      "$oid": "698f76663a0ddddd56b404ad"
+    },
+    "id_empoyee": "697276770359839a1768bee2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6af"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 4,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MALM880816EN8"
+  },
+  {
+    "_id": {
+      "$oid": "698f76c53a0ddddd56b404bf"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "698f77843a0ddddd56b404d5"
+    },
+    "id_empoyee": "697276770359839a1768c1e2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5af"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 155,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "RUBF890805EC2"
+  },
+  {
+    "_id": {
+      "$oid": "698f77d63a0ddddd56b404e7"
+    },
+    "id_empoyee": "697276770359839a1768c1e7",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5c8"
+    },
+    "FECHA": "2026-02-11",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 22,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AECA880402UB1"
+  },
+  {
+    "_id": {
+      "$oid": "698f78433a0ddddd56b4050b"
+    },
+    "id_empoyee": "697276770359839a1768bfa5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa7e"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 146,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GOVR720307CJ3"
+  },
+  {
+    "_id": {
+      "$oid": "6993708b8453d39f487415e5"
+    },
+    "id_empoyee": "697276770359839a1768bb56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f3"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 6,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AIPA930706P68"
+  },
+  {
+    "_id": {
+      "$oid": "699370ba8453d39f487415ff"
+    },
+    "id_empoyee": "697276770359839a1768beea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d7"
+    },
+    "FECHA": "2026-02-12",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 33,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUHJ8810196P7"
+  },
+  {
+    "_id": {
+      "$oid": "699370e18453d39f48741618"
+    },
+    "id_empoyee": "697276770359839a1768c148",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b2ad"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 38,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CARJ700925AL8"
+  },
+  {
+    "_id": {
+      "$oid": "6993718f8453d39f48741649"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-02-12",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "699371be8453d39f48741664"
+    },
+    "id_empoyee": "697276770359839a1768be28",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a30d"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 8,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HESD970306DG1"
+  },
+  {
+    "_id": {
+      "$oid": "699371f88453d39f48741680"
+    },
+    "id_empoyee": "697276770359839a1768bfa5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa7e"
+    },
+    "FECHA": "2026-02-11",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 146,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GOVR720307CJ3"
+  },
+  {
+    "_id": {
+      "$oid": "699372118453d39f48741693"
+    },
+    "id_empoyee": "697276770359839a1768bfa5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa7e"
+    },
+    "FECHA": "2026-02-12",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 146,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GOVR720307CJ3"
+  },
+  {
+    "_id": {
+      "$oid": "699490138453d39f487418b6"
+    },
+    "id_empoyee": "697276770359839a1768c1e5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5be"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 65,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MUVL631211EH6"
+  },
+  {
+    "_id": {
+      "$oid": "6994904b8453d39f487418c5"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "699490888453d39f487418d4"
+    },
+    "id_empoyee": "697276770359839a1768c1e0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5a5"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 16,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MEEA900807C79"
+  },
+  {
+    "_id": {
+      "$oid": "699490cb8453d39f487418e3"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-02-06",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "699491028453d39f487418f2"
+    },
+    "id_empoyee": "697276770359839a1768c1e2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5af"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 155,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "RUBF890805EC2"
+  },
+  {
+    "_id": {
+      "$oid": "699491418453d39f48741905"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-02-04",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "699491538453d39f4874190d"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-02-09",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "699491748453d39f48741915"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-02-10",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "699491a38453d39f48741924"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "6994d941cfd8e8855fb0de49"
+    },
+    "id_empoyee": "697276770359839a1768bee9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d2"
+    },
+    "FECHA": "2026-02-05",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "BARA771119DD4"
+  },
+  {
+    "_id": {
+      "$oid": "6994d995cfd8e8855fb0de5f"
+    },
+    "id_empoyee": "697276770359839a1768bee9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6d2"
+    },
+    "FECHA": "2026-02-13",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "BARA771119DD4"
+  },
+  {
+    "_id": {
+      "$oid": "6994d9fecfd8e8855fb0de7e"
+    },
+    "id_empoyee": "697276770359839a1768c1ea",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d7"
+    },
+    "FECHA": "2026-02-11",
+    "HORARIO_ENTRADA": true,
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 27,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HEAH871004CL4"
+  },
+  {
+    "_id": {
+      "$oid": "699c8d5ab97289d294a275d5"
+    },
+    "id_empoyee": "697276770359839a1768bc90",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689b15"
+    },
+    "FECHA": "2026-02-17",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 11,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "CAHA761012KY1"
+  },
+  {
+    "_id": {
+      "$oid": "699c8db1b97289d294a275e5"
+    },
+    "id_empoyee": "697276770359839a1768bbb9",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176896e2"
+    },
+    "FECHA": "2026-02-17",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 66,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "LOTV820329ET8"
+  },
+  {
+    "_id": {
+      "$oid": "699c8dfdb97289d294a275f9"
+    },
+    "id_empoyee": "697276770359839a1768bc0f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689890"
+    },
+    "FECHA": "2026-02-17",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 68,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "HERS711231HP0"
+  },
+  {
+    "_id": {
+      "$oid": "699c9cf7b97289d294a276f0"
+    },
+    "id_empoyee": "697276770359839a1768bef4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a709"
+    },
+    "FECHA": "2026-02-18",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 42,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "MAMG810903356"
+  },
+  {
+    "_id": {
+      "$oid": "699c9d33b97289d294a27709"
+    },
+    "id_empoyee": "697276770359839a1768bb56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894f3"
+    },
+    "FECHA": "2026-02-17",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 6,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "AIPA930706P68"
+  },
+  {
+    "_id": {
+      "$oid": "699c9df4b97289d294a2772b"
+    },
+    "id_empoyee": "697276770359839a1768bee3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6b4"
+    },
+    "FECHA": "2026-02-16",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 69,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "CUJP950609F67"
+  },
+  {
+    "_id": {
+      "$oid": "699c9e23b97289d294a27742"
+    },
+    "id_empoyee": "697276770359839a1768c1e1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5aa"
+    },
+    "FECHA": "2026-02-17",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 64,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "FOAF910722HD9"
+  },
+  {
+    "_id": {
+      "$oid": "699c9e53b97289d294a27759"
+    },
+    "id_empoyee": "697276770359839a1768bef2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6ff"
+    },
+    "FECHA": "2026-02-16",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 30,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "DICR890113IJ0"
+  },
+  {
+    "_id": {
+      "$oid": "699c9e81b97289d294a27770"
+    },
+    "id_empoyee": "697276770359839a1768beeb",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6dc"
+    },
+    "FECHA": "2026-02-16",
+    "HORARIO_SALIDA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 49,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "LALG770609T37"
+  },
+  {
+    "_id": {
+      "$oid": "699c9e8eb97289d294a2777c"
+    },
+    "id_empoyee": "697276770359839a1768beeb",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6dc"
+    },
+    "FECHA": "2026-02-17",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 49,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "LALG770609T37"
+  },
+  {
+    "_id": {
+      "$oid": "699ca9e2b97289d294a278a6"
+    },
+    "id_empoyee": "697276770359839a1768bb49",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176894b2"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-17",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 4,
+    "FOLIO": "0228",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "DAGM920222MT8"
+  },
+  {
+    "_id": {
+      "$oid": "699caa46b97289d294a278c1"
+    },
+    "id_empoyee": "697276770359839a1768bdb0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a0b5"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-17",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 20,
+    "FOLIO": "02029",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "FUAN930427RD4"
+  },
+  {
+    "_id": {
+      "$oid": "699cab27b97289d294a2790a"
+    },
+    "id_empoyee": "697276770359839a1768bf8c",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa01"
+    },
+    "FECHA": "2026-02-20",
+    "HORA_DESDE": "07:00",
+    "HORA_HASTA": "09:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 141,
+    "FOLIO": "02171",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE IMSS",
+    "RFC": "PEPA640316LA3"
+  },
+  {
+    "_id": {
+      "$oid": "699cac44b97289d294a2792f"
+    },
+    "id_empoyee": "697276770359839a1768be6c",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a461"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-17",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 171,
+    "FOLIO": "02030",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "LOSA93013011A"
+  },
+  {
+    "_id": {
+      "$oid": "699cb33fb97289d294a27a8a"
+    },
+    "id_empoyee": "697276770359839a1768bb1e",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176893db"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 293,
+    "FOLIO": "02018",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "SAGM011015EZ9"
+  },
+  {
+    "_id": {
+      "$oid": "699cb483b97289d294a27b19"
+    },
+    "id_empoyee": "697276770359839a1768bb02",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768934f"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 381,
+    "FOLIO": "02019",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "GARA910207ID1"
+  },
+  {
+    "_id": {
+      "$oid": "699cb4c6b97289d294a27b36"
+    },
+    "id_empoyee": "697276770359839a1768bb15",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176893ae"
+    },
+    "FECHA": "2026-02-18",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 397,
+    "FOLIO": "02089",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "HERE910613E53"
+  },
+  {
+    "_id": {
+      "$oid": "699cb563b97289d294a27b7d"
+    },
+    "id_empoyee": "697276770359839a1768bc56",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176899f3"
+    },
+    "FECHA": "2026-02-18",
+    "HORA_DESDE": "15:00",
+    "HORA_HASTA": "15:50",
+    "OBSERVACIONES": "ENCIMÓ REGISTRO EL MISMO DIA",
+    "AÑO": 2026,
+    "NUMTARJETA": 409,
+    "FOLIO": "02087",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "MAMS750208IP8"
+  },
+  {
+    "_id": {
+      "$oid": "699dc36ccc36ef142c40e33f"
+    },
+    "id_empoyee": "697276770359839a1768be26",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a303"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "10:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 656,
+    "FOLIO": "02093",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "LECI841017AN6"
+  },
+  {
+    "_id": {
+      "$oid": "699dc4a9cc36ef142c40e38c"
+    },
+    "id_empoyee": "697276770359839a1768be5f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a420"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "16:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 740,
+    "FOLIO": "01992",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "RORR891104SH5"
+  },
+  {
+    "_id": {
+      "$oid": "699dc58bcc36ef142c40e3be"
+    },
+    "id_empoyee": "697276770359839a1768c0cf",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b050"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-17",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 796,
+    "FOLIO": "02177",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "TOVE700205SJ6"
+  },
+  {
+    "_id": {
+      "$oid": "699dc5d8cc36ef142c40e3d3"
+    },
+    "id_empoyee": "697276770359839a1768c0cf",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b050"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-19",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 796,
+    "FOLIO": "02176",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "TOVE700205SJ6"
+  },
+  {
+    "_id": {
+      "$oid": "699dc63dcc36ef142c40e3e8"
+    },
+    "id_empoyee": "697276770359839a1768be0c",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a281"
+    },
+    "FECHA": "2026-02-17",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "10:30",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 828,
+    "FOLIO": "01985",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "TOSD910115E83"
+  },
+  {
+    "_id": {
+      "$oid": "699dd68c9f5ef04bfd029c2e"
+    },
+    "id_empoyee": "697276770359839a1768badf",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176892a0"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "16:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 900,
+    "FOLIO": "02173",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "HEAC83122641A"
+  },
+  {
+    "_id": {
+      "$oid": "699dd6c99f5ef04bfd029c41"
+    },
+    "id_empoyee": "697276770359839a1768c1d8",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b57d"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "16:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 955,
+    "FOLIO": "01992",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "RUVF7607202E6"
+  },
+  {
+    "_id": {
+      "$oid": "699dd74e9f5ef04bfd029c66"
+    },
+    "id_empoyee": "697276770359839a1768bd29",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689e12"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 978,
+    "FOLIO": "01992",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "MOJO891202DS7"
+  },
+  {
+    "_id": {
+      "$oid": "699de1469f5ef04bfd029d4f"
+    },
+    "id_empoyee": "697276770359839a1768bbfb",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768982c"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 385,
+    "FOLIO": "02216",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "ROMJ991213H14"
+  },
+  {
+    "_id": {
+      "$oid": "699de1f3dec1371bec66503a"
+    },
+    "id_empoyee": "697276770359839a1768bae5",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176892be"
+    },
+    "FECHA": "2026-02-20",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "16:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 574,
+    "FOLIO": "02214",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "HEHZ700622UN7"
+  },
+  {
+    "_id": {
+      "$oid": "699de23ddec1371bec665049"
+    },
+    "id_empoyee": "697276770359839a1768bd1f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689de0"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "09:30",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 583,
+    "FOLIO": "02209",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "MEPR8402058N6"
+  },
+  {
+    "_id": {
+      "$oid": "699de2bbdec1371bec665092"
+    },
+    "id_empoyee": "697276770359839a1768bd67",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f48"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "09:30",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 682,
+    "FOLIO": "02210",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "RAMM900815PD6"
+  },
+  {
+    "_id": {
+      "$oid": "699de2eadec1371bec6650a4"
+    },
+    "id_empoyee": "697276770359839a1768bdfc",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a231"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 727,
+    "FOLIO": "02218",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "BIHY8205224B1"
+  },
+  {
+    "_id": {
+      "$oid": "699de4e4dec1371bec6650de"
+    },
+    "id_empoyee": "697276770359839a1768c00a",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ac77"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 733,
+    "FOLIO": "02207",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "LOLE631115AV1"
+  },
+  {
+    "_id": {
+      "$oid": "699de52ddec1371bec6650eb"
+    },
+    "id_empoyee": "697276770359839a1768c0d2",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b05f"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-20",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 781,
+    "FOLIO": "02217",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE CURSO",
+    "RFC": "GOCW690515TIA"
+  },
+  {
+    "_id": {
+      "$oid": "699de60ddec1371bec665106"
+    },
+    "id_empoyee": "697276770359839a1768bb17",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176893b8"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 795,
+    "FOLIO": "02215",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "MACE051018MT3"
+  },
+  {
+    "_id": {
+      "$oid": "699de62edec1371bec66510d"
+    },
+    "id_empoyee": "697276770359839a1768bb17",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176893b8"
+    },
+    "FECHA": "2026-02-20",
+    "HORA_DESDE": "09:00",
+    "HORA_HASTA": "15:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 795,
+    "FOLIO": "02215",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE PERMANENCIA",
+    "RFC": "MACE051018MT3"
+  },
+  {
+    "_id": {
+      "$oid": "699e0426dec1371bec66587f"
+    },
+    "id_empoyee": "697276770359839a1768bfd4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ab69"
+    },
+    "FECHA": "2026-02-23",
+    "HORA_DESDE": "11:02",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 1026,
+    "FOLIO": "02211",
+    "TIPO_COMPROBANTE": "COMISIÓN DENTRO DE LA CIUDAD",
+    "RFC": "GOLM7906176Z1"
+  },
+  {
+    "_id": {
+      "$oid": "699e046edec1371bec665891"
+    },
+    "id_empoyee": "697276770359839a1768bfdf",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aba0"
+    },
+    "FECHA": "2026-02-20",
+    "HORA_DESDE": "16:19",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 872,
+    "FOLIO": "02174",
+    "TIPO_COMPROBANTE": "COMISIÓN DENTRO DE LA CIUDAD",
+    "RFC": "FARF860818AF7"
+  },
+  {
+    "_id": {
+      "$oid": "699e04acdec1371bec66589e"
+    },
+    "id_empoyee": "697276770359839a1768bfd4",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ab69"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "12:24",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 1026,
+    "FOLIO": "01816",
+    "TIPO_COMPROBANTE": "COMISIÓN DENTRO DE LA CIUDAD",
+    "RFC": "GOLM7906176Z1"
+  },
+  {
+    "_id": {
+      "$oid": "699f344cdec1371bec665d0c"
+    },
+    "id_empoyee": "697276770359839a1768c1c0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b505"
+    },
+    "FECHA": "2026-02-23",
+    "HORA_DESDE": "09:19",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 960,
+    "FOLIO": "02241",
+    "TIPO_COMPROBANTE": "COMISIÓN DENTRO DE LA CIUDAD",
+    "RFC": "RIBA830429648"
+  },
+  {
+    "_id": {
+      "$oid": "699f41a9dec1371bec6661bb"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-23",
+    "HASTA": "2026-02-23",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 80,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "69a07e86dec1371bec666f9d"
+    },
+    "id_empoyee": "697276770359839a1768c1de",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b59b"
+    },
+    "FECHA": "2026-02-19",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 26,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "HERC881104QH3"
+  },
+  {
+    "_id": {
+      "$oid": "69a07ee7dec1371bec666fba"
+    },
+    "id_empoyee": "697276770359839a1768c03f",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad80"
+    },
+    "FECHA": "2026-02-20",
+    "HORARIO_ENTRADA": true,
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 48,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "VISITA DOMICILIARIA",
+    "RFC": "GAML770314UI0"
+  },
+  {
+    "_id": {
+      "$oid": "69a07f80dec1371bec66702f"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-02-16",
+    "HORA_DESDE": "08:05",
+    "HORA_HASTA": "08:20",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "2307",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "69a07ffbdec1371bec6670a2"
+    },
+    "id_empoyee": "697276770359839a1768bbd1",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768975a"
+    },
+    "FECHA": "2026-02-19",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "09:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 71,
+    "FOLIO": "2308",
+    "TIPO_COMPROBANTE": "CONSTANCIA ESCOLAR",
+    "RFC": "VALA850718B17"
+  },
+  {
+    "_id": {
+      "$oid": "69a08065dec1371bec66710b"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-18",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "14:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE IMSS",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "69a08131dec1371bec6671da"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-18",
+    "HORA_DESDE": "14:00",
+    "HORA_HASTA": "16:00",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "2309",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE IMSS",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "69a1d645dec1371bec66c06d"
+    },
+    "id_empoyee": "697276770359839a1768bf4b",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a8bc"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-27",
+    "HASTA": "2026-02-27",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 106,
+    "FOLIO": "02362",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "AUAC8205212L1"
+  },
+  {
+    "_id": {
+      "$oid": "69a1d683dec1371bec66c07f"
+    },
+    "id_empoyee": "697276770359839a1768bd77",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689f98"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-27",
+    "HASTA": "2026-02-27",
+    "NUM_DIAS": 1,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 80,
+    "FOLIO": "02362",
+    "TIPO_COMPROBANTE": "JUSTIFICANTE SINDICATO",
+    "RFC": "LOCE850328EU1"
+  },
+  {
+    "_id": {
+      "$oid": "69a1d6bbdec1371bec66c08f"
+    },
+    "id_empoyee": "697276770359839a1768c1e0",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5a5"
+    },
+    "FECHA": "2026-02-25",
+    "HORA_DESDE": "08:00",
+    "HORA_HASTA": "08:35",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 16,
+    "FOLIO": "02365",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "RFC": "MEEA900807C79"
+  },
+  {
+    "_id": {
+      "$oid": "69a1dcbadec1371bec66c203"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "FECHA": "2026-02-26",
+    "HORA_DESDE": "08:22",
+    "HORA_HASTA": "14:44",
+    "OBSERVACIONES": "",
+    "AÑO": 2026,
+    "NUMTARJETA": 79,
+    "FOLIO": "02467",
+    "TIPO_COMPROBANTE": "CONSTANCIA DE ATENCIÓN MÉDICA",
+    "DESDE": null,
+    "HASTA": null,
+    "HORARIO_ENTRADA": null,
+    "HORARIO_SALIDA": null,
+    "NUM_DIAS": null,
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "69a203e0dec1371bec66c3c8"
+    },
+    "id_empoyee": "697276770359839a1768bef3",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a704"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-18",
+    "HASTA": "2026-02-19",
+    "NUM_DIAS": 2,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 2,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "COMISIÓN FORÁNEA",
+    "RFC": "OIRC901122DC0"
+  },
+  {
+    "_id": {
+      "$oid": "69a20478dec1371bec66c3d5"
+    },
+    "id_empoyee": "697276770359839a1768bee7",
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6c8"
+    },
+    "FECHA": null,
+    "DESDE": "2026-02-18",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 3,
+    "OBSERVACIONES": "",
+    "AÑO": {
+      "$numberDouble": "NaN"
+    },
+    "NUMTARJETA": 35,
+    "FOLIO": "",
+    "TIPO_COMPROBANTE": "COMISIÓN FORÁNEA",
+    "RFC": "CUMM900605RP2"
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "_id": {
+      "$oid": "697cf9819c0e640065cff18b"
+    },
+    "id_empoyee": "697276770359839a1768bef1",
+    "DESDE": "2026-01-16",
+    "HASTA": "2026-01-16",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a6fa"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 58,
+    "OBSERVACIONES": "",
+    "RFC": "JILM930511BK2"
+  },
+  {
+    "_id": {
+      "$oid": "697cfa759c0e640065cff1e3"
+    },
+    "id_empoyee": "697276770359839a1768bede",
+    "DESDE": "2026-01-20",
+    "HASTA": "2026-01-20",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a69b"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": null,
+    "OBSERVACIONES": "",
+    "RFC": "CANE87112566A"
+  },
+  {
+    "_id": {
+      "$oid": "697cfb039c0e640065cff204"
+    },
+    "id_empoyee": "697276770359839a1768c03d",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-01-26",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ad76"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 95,
+    "OBSERVACIONES": "",
+    "RFC": "MARR6509023Z1"
+  },
+  {
+    "_id": {
+      "$oid": "697cfb559c0e640065cff22b"
+    },
+    "id_empoyee": "697276770359839a1768bfa6",
+    "DESDE": "2026-01-28",
+    "HASTA": "2026-01-28",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa83"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 120,
+    "OBSERVACIONES": "",
+    "RFC": "TOPM681020HS1"
+  },
+  {
+    "_id": {
+      "$oid": "698cb4fc8c410cdde73183b6"
+    },
+    "id_empoyee": "697276770359839a1768bc8e",
+    "DESDE": "2026-02-06",
+    "HASTA": "2026-02-06",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689b0b"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 132,
+    "OBSERVACIONES": "",
+    "RFC": "MARO950325AS0"
+  },
+  {
+    "_id": {
+      "$oid": "698e27d7c3c7f0d298402389"
+    },
+    "id_empoyee": "697276770359839a1768c1e9",
+    "DESDE": "2026-02-11",
+    "HASTA": "2026-02-13",
+    "NUM_DIAS": 3,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b5d2"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 28,
+    "OBSERVACIONES": "",
+    "RFC": "GACY8505292X6"
+  },
+  {
+    "_id": {
+      "$oid": "699de8bbdec1371bec66512f"
+    },
+    "id_empoyee": "697276770359839a1768bfd4",
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 2,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768ab69"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 1026,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "GOLM7906176Z1"
+  },
+  {
+    "_id": {
+      "$oid": "699de926dec1371bec665144"
+    },
+    "id_empoyee": "697276770359839a1768bd47",
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-19",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689ea8"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 355,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "GOPC520309J38"
+  },
+  {
+    "_id": {
+      "$oid": "699de993dec1371bec665153"
+    },
+    "id_empoyee": "697276770359839a1768bc63",
+    "DESDE": "2026-02-18",
+    "HASTA": "2026-02-18",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689a34"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 1034,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "AUCM830705VA5"
+  },
+  {
+    "_id": {
+      "$oid": "699de9b3dec1371bec665160"
+    },
+    "id_empoyee": "697276770359839a1768bf9c",
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-19",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768aa51"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 419,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "CASM780723ML8"
+  },
+  {
+    "_id": {
+      "$oid": "699dea87dec1371bec665178"
+    },
+    "id_empoyee": "697276770359839a1768bc63",
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 2,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689a34"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 1034,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "AUCM830705VA5"
+  },
+  {
+    "_id": {
+      "$oid": "699deb6bdec1371bec66519a"
+    },
+    "id_empoyee": "697276770359839a1768bbae",
+    "DESDE": "2025-12-01",
+    "HASTA": "2026-02-28",
+    "NUM_DIAS": 90,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a176896ab"
+    },
+    "AÑO": 2025,
+    "NUMTARJETA": 230,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD POR GRAVIDEZ",
+    "RFC": "CAVR900107JD5"
+  },
+  {
+    "_id": {
+      "$oid": "699debbcdec1371bec6651bc"
+    },
+    "id_empoyee": "697276770359839a1768be70",
+    "DESDE": "2026-02-11",
+    "HASTA": "2026-03-10",
+    "NUM_DIAS": 28,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a475"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 284,
+    "OBSERVACIONES": "ACUMULADOS 52",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "CAMC730906N32"
+  },
+  {
+    "_id": {
+      "$oid": "699debeddec1371bec6651d1"
+    },
+    "id_empoyee": "697276770359839a1768bd47",
+    "DESDE": "2026-02-17",
+    "HASTA": "2026-02-17",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689ea8"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 355,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "GOPC520309J38"
+  },
+  {
+    "_id": {
+      "$oid": "699dec4edec1371bec6651ea"
+    },
+    "id_empoyee": "697276770359839a1768bff2",
+    "DESDE": "2026-02-16",
+    "HASTA": "2026-02-16",
+    "NUM_DIAS": 1,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768abff"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 498,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "AUCP800116825"
+  },
+  {
+    "_id": {
+      "$oid": "699dec86dec1371bec665208"
+    },
+    "id_empoyee": "697276770359839a1768bc98",
+    "DESDE": "2026-02-19",
+    "HASTA": "2026-02-23",
+    "NUM_DIAS": 5,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a17689b3d"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 738,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "ZAAV830622E6A"
+  },
+  {
+    "_id": {
+      "$oid": "699decd4dec1371bec665232"
+    },
+    "id_empoyee": "697276770359839a1768bf37",
+    "DESDE": "2026-02-11",
+    "HASTA": "2026-03-10",
+    "NUM_DIAS": 28,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768a858"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 858,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "SICO5910024G4"
+  },
+  {
+    "_id": {
+      "$oid": "699ded00dec1371bec665244"
+    },
+    "id_empoyee": "697276770359839a1768c1ca",
+    "DESDE": "2025-11-21",
+    "HASTA": "2026-02-20",
+    "NUM_DIAS": 92,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768b537"
+    },
+    "AÑO": 2025,
+    "NUMTARJETA": 865,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD POR GRAVIDEZ",
+    "RFC": "BAVC840314JX9"
+  },
+  {
+    "_id": {
+      "$oid": "699dede9dec1371bec665273"
+    },
+    "id_empoyee": "697276770359839a1768bba2",
+    "DESDE": "2026-01-26",
+    "HASTA": "2026-02-22",
+    "NUM_DIAS": 28,
+    "ID_CTRL_ASIST": {
+      "$oid": "697276760359839a1768966f"
+    },
+    "AÑO": 2026,
+    "NUMTARJETA": 969,
+    "OBSERVACIONES": "",
+    "TIPO": "INCAPACIDAD MÉDICA",
+    "RFC": "POBL7902109D3"
+  }
+]
